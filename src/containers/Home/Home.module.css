@@ -8,25 +8,26 @@
 }
 .Hero {
     width: 100%;
-    height: calc(90vh - 7rem);
+    height: calc(100vh - 7rem);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
 }
-h2 {
+.Home h2 {
     font-size: 3rem;
     font-weight: 400;
     letter-spacing: 2rem;
     font-family: "Poppins", sans-serif;
     animation: fadeInh2 0.5s linear;
     -webkit-animation: fadeInh2 0.5s linear;
+    margin-bottom: 2.5rem;
 }
-h1 {
-    font-size: 6rem;
-    font-weight: 700;
-    letter-spacing: 3rem;
+.Home h1 {
+    font-size: 7rem;
+    font-weight: 600;
+    letter-spacing: 2.5rem;
     font-family: "Poppins", sans-serif;
     animation: fadeInh1 0.5s linear;
     -webkit-animation: fadeInh1 0.5s linear;

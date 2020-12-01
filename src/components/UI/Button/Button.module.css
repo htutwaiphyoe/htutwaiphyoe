@@ -1,8 +1,8 @@
 .Button {
-    margin-top: 2rem;
     border-radius: 10rem;
     padding: 1rem 2rem;
-    background-color: #f7f7f7;
+    /* background-color: #7f51a9; */
+    background-color: #6f57af;
     -webkit-border-radius: 10rem;
     -moz-border-radius: 10rem;
     -ms-border-radius: 10rem;
@@ -11,7 +11,7 @@
     -webkit-animation: fadeInButton 0.3s linear;
 }
 .Button a {
-    color: #18191a;
+    color: #f7f7f7;
     text-decoration: none;
     font-size: 1.5rem;
 }

@@ -9,9 +9,9 @@ const navItems = [
     { route: "/contact", content: "Contact" },
 ];
 const NavigationList = (props) => {
-    let navItemsComponent = navItems.map((item) => (
-        <li>
-            <NavLink to={item.route} activeClassName={classes.active}>
+    let navItemsComponent = navItems.map((item, index) => (
+        <li key={index}>
+            <NavLink to={item.route} exact activeClassName={classes.active}>
                 {item.content}
             </NavLink>
         </li>
