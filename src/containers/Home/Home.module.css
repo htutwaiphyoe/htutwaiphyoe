@@ -22,12 +22,12 @@
     font-family: "Poppins", sans-serif;
     animation: fadeInh2 0.5s linear;
     -webkit-animation: fadeInh2 0.5s linear;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
 }
 .Home h1 {
     font-size: 7rem;
     font-weight: 600;
-    letter-spacing: 2.5rem;
+    letter-spacing: 3rem;
     font-family: "Poppins", sans-serif;
     animation: fadeInh1 0.5s linear;
     -webkit-animation: fadeInh1 0.5s linear;

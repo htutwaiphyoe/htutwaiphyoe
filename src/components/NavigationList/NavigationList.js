@@ -11,7 +11,11 @@ const navItems = [
 const NavigationList = (props) => {
     let navItemsComponent = navItems.map((item, index) => (
         <li key={index}>
-            <NavLink to={item.route} exact activeClassName={classes.active}>
+            <NavLink
+                to={item.route}
+                exact={item.route === "/blogs" ? false : true}
+                activeClassName={classes.active}
+            >
                 {item.content}
             </NavLink>
         </li>

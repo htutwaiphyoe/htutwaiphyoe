@@ -15,13 +15,25 @@
     -ms-border-radius: 0.7rem;
     -o-border-radius: 0.7rem;
     overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    -webkit-transition: transform 0.2s ease-in-out;
+    -moz-transition: transform 0.2s ease-in-out;
+    -ms-transition: transform 0.2s ease-in-out;
+    -o-transition: transform 0.2s ease-in-out;
+}
+.Blog .BlogItem:hover {
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    -o-transform: scale(1.02);
 }
 .Blog .BlogItem .ItemImage {
     width: 100%;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
 }
 .Blog .BlogItem .ItemImage img {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
     width: 100%;
     opacity: 0;
 }
@@ -33,7 +45,15 @@
 .tag {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: #6f57af;
+    color: #7f51a9;
+}
+.time {
+    display: flex;
+    font-size: 1.5rem;
+    align-items: center;
+    color: #888;
+    justify-content: space-between;
+    margin-bottom: 1rem;
 }
 @media only screen and (max-width: 992px) {
     .Blog {

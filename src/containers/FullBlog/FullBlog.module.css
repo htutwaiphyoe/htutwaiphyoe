@@ -1,0 +1,51 @@
+.FullBlog {
+    width: 60%;
+    margin: 0 auto;
+    padding: 1rem 0;
+    text-align: center;
+}
+.FullBlog h2 {
+    font-size: 3.5rem;
+}
+.FullBlog .Time {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.FullBlog .Time p {
+    font-size: 1.8rem;
+    color: #ccc;
+}
+.FullBlog .Time p:not(:first-child) {
+    margin-left: 2rem;
+}
+.FullBlog .Image {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    overflow: hidden;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+}
+
+.FullBlog .Image img {
+    width: 100%;
+    opacity: 1;
+}
+.FullBlog .Body {
+    width: 100%;
+    margin: auto;
+    margin-top: -10rem !important;
+    background-color: #e4e6eb;
+    padding: 9vw 5vw 3vw;
+    font-size: 1.7rem;
+    text-align: left;
+    color: #1c1e21;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
