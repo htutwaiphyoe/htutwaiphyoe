@@ -1,6 +1,7 @@
-import { useCallback, useEffect, useRef } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { useEffect, useRef } from "react";
 
+import NavigationList from "../../components/NavigationList/NavigationList";
+import Button from "../../components/UI/Button/Button";
 import classes from "./Home.module.css";
 const Home = (props) => {
     const heading = useRef();
@@ -25,43 +26,13 @@ const Home = (props) => {
     }, []);
     return (
         <header className={classes.Home}>
-            <nav className={classes.Nav}>
-                <ul>
-                    <li>
-                        <NavLink to="/" activeClassName={classes.active}>
-                            Home
-                        </NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/about" activeClassName={classes.active}>
-                            About
-                        </NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/portfolio" activeClassName={classes.active}>
-                            Portfolio
-                        </NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/blogs" activeClassName={classes.active}>
-                            Blogs
-                        </NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/contact" activeClassName={classes.active}>
-                            Contact
-                        </NavLink>
-                    </li>
-                </ul>
-            </nav>
+            <NavigationList />
             <div className={classes.Hero}>
                 <div>
                     <h1>GIVING UP</h1>
                     <h2 ref={heading}>IS </h2>
                 </div>
-                <div className={classes.Btn}>
-                    <Link to="/blogs">Discover Blogs</Link>
-                </div>
+                <Button route="/blogs" content="Discover Blogs" />
             </div>
         </header>
     );

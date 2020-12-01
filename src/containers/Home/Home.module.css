@@ -6,52 +6,6 @@
     background-position: center;
     background-size: cover;
 }
-.Nav {
-    width: 100%;
-    height: 7rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.Nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.Nav ul li {
-    padding: 0 2rem;
-}
-.Nav ul li a:link,
-.Nav ul li a:visited {
-    color: #f7f7f7;
-    font-size: 1.8rem;
-    padding-bottom: 0.5rem;
-    text-decoration: none;
-    position: relative;
-}
-.Nav ul li a::after {
-    content: "";
-    width: 0%;
-    height: 1px;
-    bottom: 0;
-    background-color: #f7f7f7;
-    left: 0;
-    position: absolute;
-    transform-origin: center;
-    transition: width 0.2s;
-    -webkit-transition: width 0.2s;
-    -moz-transition: width 0.2s;
-    -ms-transition: width 0.2s;
-    -o-transition: width 0.2s;
-}
-
-.Nav ul li a:active:after,
-.Nav ul li a.active:after,
-.Nav ul li a:hover:after {
-    width: 100%;
-    transform-origin: center;
-}
 .Hero {
     width: 100%;
     height: calc(90vh - 7rem);
@@ -76,23 +30,6 @@ h1 {
     font-family: "Poppins", sans-serif;
     animation: fadeInh1 0.5s linear;
     -webkit-animation: fadeInh1 0.5s linear;
-}
-.Btn {
-    margin-top: 2rem;
-    border-radius: 10rem;
-    padding: 1rem 2rem;
-    background-color: #f7f7f7;
-    -webkit-border-radius: 10rem;
-    -moz-border-radius: 10rem;
-    -ms-border-radius: 10rem;
-    -o-border-radius: 10rem;
-    animation: fadeInBtn 0.3s linear;
-    -webkit-animation: fadeInBtn 0.3s linear;
-}
-.Btn a {
-    color: #18191a;
-    text-decoration: none;
-    font-size: 1.5rem;
 }
 
 @keyframes fadeInh2 {
