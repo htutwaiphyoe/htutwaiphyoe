@@ -1,17 +1,47 @@
 .Button {
     border-radius: 10rem;
     padding: 1rem 2rem;
-    background-color: #7f51a9;
-    /* background-color: #6f57af; */
+    background-color: #772ce8;
+    /* background-color: #7f51a9; */
+    /*background-color: #6f57af;
+    */
     -webkit-border-radius: 10rem;
     -moz-border-radius: 10rem;
     -ms-border-radius: 10rem;
     -o-border-radius: 10rem;
     animation: fadeInButton 0.3s linear;
     -webkit-animation: fadeInButton 0.3s linear;
+    transition: background-color 0.2s;
+    -webkit-transition: background-color 0.2s;
+    -moz-transition: background-color 0.2s;
+    -ms-transition: background-color 0.2s;
+    -o-transition: background-color 0.2s;
 }
 .Button a {
-    color: #f7f7f7;
+    color: #e4e6eb;
     text-decoration: none;
     font-size: 1.5rem;
+}
+
+.Button:hover {
+    background-color: #7e51a998;
+}
+@keyframes fadeInButton {
+    0% {
+        opacity: 0;
+        transform: translateY(10rem);
+        -webkit-transform: translateY(10rem);
+        -moz-transform: translateY(10rem);
+        -ms-transform: translateY(10rem);
+        -o-transform: translateY(10rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+    }
 }

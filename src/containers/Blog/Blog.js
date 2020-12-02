@@ -8,6 +8,7 @@ const Blog = (props) => {
     const [blogs, setBlogs] = useState([]);
     const [loading, setLoading] = useState(false);
     useEffect(() => {
+        window.scrollTo(0, 0);
         setLoading(true);
         let timer;
         axios.get("https://portfolio-80db9.firebaseio.com/blogs.json").then((res) => {
@@ -33,18 +34,47 @@ const Blog = (props) => {
             (blog) => (
                 <div className={classes.BlogItem} key={blog.id}>
                     <figure className={classes.ItemImage}>
-                        <Skeleton variant="rect" width="100%" height={200} animation="wave" />
+                        <Skeleton
+                            variant="rect"
+                            width="100%"
+                            height={200}
+                            animation="wave"
+                            style={{ backgroundColor: "#2C2E2F" }}
+                        />
                     </figure>
 
                     <div className={classes.ItemText}>
-                        <Skeleton variant="text" width="30%" animation="wave" />
+                        <Skeleton
+                            variant="text"
+                            width="30%"
+                            animation="wave"
+                            style={{ backgroundColor: "#2C2E2F" }}
+                        />
 
                         <div className={classes.time}>
-                            <Skeleton variant="text" width="20%" animation="wave" />
-                            <Skeleton variant="text" width="20%" animation="wave" />
+                            <Skeleton
+                                variant="text"
+                                width="20%"
+                                animation="wave"
+                                style={{ backgroundColor: "#2C2E2F" }}
+                            />
+                            <Skeleton
+                                variant="text"
+                                width="20%"
+                                animation="wave"
+                                style={{ backgroundColor: "#2C2E2F" }}
+                            />
                         </div>
-                        <Skeleton variant="text" animation="wave" />
-                        <Skeleton variant="text" animation="wave" />
+                        <Skeleton
+                            variant="text"
+                            animation="wave"
+                            style={{ backgroundColor: "#2C2E2F" }}
+                        />
+                        <Skeleton
+                            variant="text"
+                            animation="wave"
+                            style={{ backgroundColor: "#2C2E2F" }}
+                        />
                     </div>
                 </div>
             )

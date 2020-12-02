@@ -7,8 +7,8 @@
 }
 .Blog .BlogItem {
     width: 100%;
-    background-color: #e4e6eb;
-    color: #1c1e21;
+    background-color: #242526;
+    color: #e4e6eb;
     border-radius: 0.7rem;
     -webkit-border-radius: 0.7rem;
     -moz-border-radius: 0.7rem;
@@ -45,13 +45,13 @@
 .tag {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: #7f51a9;
+    color: #772ce8;
 }
 .time {
     display: flex;
     font-size: 1.5rem;
     align-items: center;
-    color: #888;
+    color: #aaa;
     justify-content: space-between;
     margin-bottom: 1rem;
 }

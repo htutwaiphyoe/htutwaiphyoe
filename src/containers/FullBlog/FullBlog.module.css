@@ -1,8 +1,10 @@
 .FullBlog {
-    width: 60%;
+    width: 76rem;
+    /* padding: 2rem 5rem; */
     margin: 0 auto;
-    padding: 1rem 0;
+    padding: 1rem;
     text-align: center;
+    color: #e4e6eb;
 }
 .FullBlog h2 {
     font-size: 3.5rem;
@@ -37,10 +39,11 @@
 .FullBlog .Body {
     width: 100%;
     margin: auto;
-    margin-top: -10rem !important;
-    background-color: #e4e6eb;
-    padding: 9vw 5vw 3vw;
-    font-size: 1.7rem;
+    margin-top: -6rem !important;
+    background-color: #242526;
+    /* padding: 9vw 5vw 3vw; */
+    padding: 7rem 2rem 0;
+    font-size: 1.6rem;
     text-align: left;
     color: #1c1e21;
     border-radius: 1rem;
@@ -48,4 +51,48 @@
     -moz-border-radius: 1rem;
     -ms-border-radius: 1rem;
     -o-border-radius: 1rem;
+    line-height: 1.6;
+    color: #e4e6eb;
+}
+.FullBlog .Body .Code {
+    width: 100%;
+    background-color: #1c1e21;
+    padding: 2rem;
+    color: #e4e6eb;
+    margin-bottom: 1.5rem;
+}
+.FullBlog .Body .Text {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+.FullBlog .Body .Img {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+.FullBlog .Body .Link {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+}
+@media only screen and (max-width: 768px) {
+    .FullBlog {
+        width: 100%;
+        /* padding: 2rem 5rem; */
+        margin: 0 auto;
+        padding: 1rem 0.5rem;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .FullBlog h2 {
+        font-size: 2.7rem;
+    }
+    .FullBlog .Time p {
+        font-size: 1.6rem;
+        color: #ccc;
+    }
+    .FullBlog .Body {
+        padding: 7rem 0.5rem 0;
+    }
 }

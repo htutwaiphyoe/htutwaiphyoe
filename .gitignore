@@ -6,6 +6,7 @@
 .pnp.js
 .prettierrc
 .eslintcache
+data.json
 # testing
 /coverage
 

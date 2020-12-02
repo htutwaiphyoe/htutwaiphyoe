@@ -79,22 +79,4 @@
         -o-transform: translateX(0);
     }
 }
-@keyframes fadeInBtn {
-    0% {
-        opacity: 0;
-        transform: translateY(10rem);
-        -webkit-transform: translateY(10rem);
-        -moz-transform: translateY(10rem);
-        -ms-transform: translateY(10rem);
-        -o-transform: translateY(10rem);
-    }
 
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-        -webkit-transform: translateX(0);
-        -moz-transform: translateX(0);
-        -ms-transform: translateX(0);
-        -o-transform: translateX(0);
-    }
-}

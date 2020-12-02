@@ -8,6 +8,7 @@ const FullBlog = (props) => {
     const [blog, setBlog] = useState(null);
 
     useEffect(() => {
+        window.scrollTo(0, 0);
         let timer;
         axios
             .get(`https://portfolio-80db9.firebaseio.com/blogs/${props.match.params.id}.json`)
@@ -22,25 +23,85 @@ const FullBlog = (props) => {
             clearTimeout(timer);
         };
     }, [props.match.params.id]);
-    let component = null;
-    // let component = (
-    //     <div className={classes.FullBlog}>
-    //         <Skeleton variant="text" animation="wave" width="80%" />
-    //         <div className={classes.Time}>
-    //             <Skeleton variant="text" width="20%" animation="wave" />
-    //             <Skeleton variant="text" width="20%" animation="wave" />
-    //             <Skeleton variant="text" width="20%" animation="wave" />
-    //         </div>
-    //         <div className={classes.Image}>
-    //             <figure>
-    //                 <Skeleton variant="rect" width="100%" height={500} animation="wave" />
-    //             </figure>
-    //         </div>
-    //         <Skeleton variant="text" animation="wave" />
-    //         <Skeleton variant="text" animation="wave" />
-    //         <Skeleton variant="text" animation="wave" />
-    //     </div>
-    // );
+    let component = (
+        <div className={classes.FullBlog}>
+            <Skeleton
+                variant="text"
+                animation="wave"
+                width="80%"
+                style={{ margin: "0 auto", backgroundColor: "#2C2E2F" }}
+                height={40}
+            />
+            <Skeleton
+                variant="text"
+                animation="wave"
+                width="60%"
+                style={{ margin: "0 auto", backgroundColor: "#2C2E2F" }}
+                height={40}
+            />
+            <div className={classes.Time}>
+                <Skeleton
+                    variant="text"
+                    width="20%"
+                    animation="wave"
+                    height={30}
+                    style={{ marginLeft: "10px", backgroundColor: "#2C2E2F" }}
+                />
+                <Skeleton
+                    variant="text"
+                    width="20%"
+                    animation="wave"
+                    height={30}
+                    style={{ marginLeft: "10px", backgroundColor: "#2C2E2F" }}
+                />
+                <Skeleton
+                    variant="text"
+                    width="20%"
+                    animation="wave"
+                    height={30}
+                    style={{ marginLeft: "10px", backgroundColor: "#2C2E2F" }}
+                />
+            </div>
+            <div className={classes.Image}>
+                <figure>
+                    <Skeleton
+                        variant="rect"
+                        width="100%"
+                        height={500}
+                        animation="wave"
+                        style={{ backgroundColor: "#2C2E2F" }}
+                    />
+                </figure>
+            </div>
+            <div className={classes.Body} style={{ backgroundColor: "#242526" }}>
+                <Skeleton
+                    variant="text"
+                    animation="wave"
+                    width="30%"
+                    height={20}
+                    style={{ backgroundColor: "#2C2E2F", marginBottom: "10px" }}
+                />
+                <Skeleton
+                    variant="text"
+                    animation="wave"
+                    style={{ backgroundColor: "#2C2E2F", marginBottom: "10px" }}
+                    height={20}
+                />
+                <Skeleton
+                    variant="text"
+                    animation="wave"
+                    style={{ backgroundColor: "#2C2E2F", marginBottom: "10px" }}
+                    height={20}
+                />
+                <Skeleton
+                    variant="text"
+                    animation="wave"
+                    style={{ backgroundColor: "#2C2E2F", marginBottom: "10px" }}
+                    height={20}
+                />
+            </div>
+        </div>
+    );
     if (blog) {
         component = (
             <div className={classes.FullBlog}>
@@ -61,7 +122,34 @@ const FullBlog = (props) => {
                         <img src={blog.coverImageURL} alt={blog.title} />
                     </figure>
                 </div>
-                <p className={classes.Body}>{blog.body}</p>
+                <div className={classes.Body}>
+                    {blog.body.map((b) => {
+                        if (b.type === "code") {
+                            return (
+                                <div className={classes.Code}>
+                                    <pre>{b.body}</pre>
+                                </div>
+                            );
+                        }
+                        if (b.type === "link") {
+                            return (
+                                <a
+                                    href={b.body}
+                                    alt={b.body}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className={classes.Link}
+                                >
+                                    {b.body}
+                                </a>
+                            );
+                        }
+                        if (b.type === "image") {
+                            return <img src={b.body} alt="Example Code" className={classes.Img} />;
+                        }
+                        return <p className={classes.Text}>{b.body}</p>;
+                    })}
+                </div>
             </div>
         );
     }
