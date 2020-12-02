@@ -7,8 +7,8 @@ import classes from "./Blog.module.css";
 const Blog = (props) => {
     const [blogs, setBlogs] = useState([]);
     const [loading, setLoading] = useState(false);
+    window.scrollTo(0, 0);
     useEffect(() => {
-        window.scrollTo(0, 0);
         setLoading(true);
         let timer;
         axios.get("https://portfolio-80db9.firebaseio.com/blogs.json").then((res) => {

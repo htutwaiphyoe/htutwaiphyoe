@@ -6,9 +6,8 @@ import NavigationList from "../../components/NavigationList/NavigationList";
 import classes from "./FullBlog.module.css";
 const FullBlog = (props) => {
     const [blog, setBlog] = useState(null);
-
+    window.scrollTo(0, 0);
     useEffect(() => {
-        window.scrollTo(0, 0);
         let timer;
         axios
             .get(`https://portfolio-80db9.firebaseio.com/blogs/${props.match.params.id}.json`)
@@ -29,14 +28,14 @@ const FullBlog = (props) => {
                 variant="text"
                 animation="wave"
                 width="80%"
-                style={{ margin: "0 auto", backgroundColor: "#2C2E2F" }}
+                style={{ backgroundColor: "#2C2E2F" }}
                 height={40}
             />
             <Skeleton
                 variant="text"
                 animation="wave"
                 width="60%"
-                style={{ margin: "0 auto", backgroundColor: "#2C2E2F" }}
+                style={{ backgroundColor: "#2C2E2F" }}
                 height={40}
             />
             <div className={classes.Time}>
@@ -45,7 +44,7 @@ const FullBlog = (props) => {
                     width="20%"
                     animation="wave"
                     height={30}
-                    style={{ marginLeft: "10px", backgroundColor: "#2C2E2F" }}
+                    style={{ backgroundColor: "#2C2E2F" }}
                 />
                 <Skeleton
                     variant="text"

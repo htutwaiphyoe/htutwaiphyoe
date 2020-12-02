@@ -1,9 +1,7 @@
 .FullBlog {
     width: 76rem;
-    /* padding: 2rem 5rem; */
     margin: 0 auto;
     padding: 1rem;
-    text-align: center;
     color: #e4e6eb;
 }
 .FullBlog h2 {
@@ -12,7 +10,6 @@
 .FullBlog .Time {
     margin-top: 1rem;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 .FullBlog .Time p {
@@ -41,7 +38,6 @@
     margin: auto;
     margin-top: -6rem !important;
     background-color: #242526;
-    /* padding: 9vw 5vw 3vw; */
     padding: 7rem 2rem 0;
     font-size: 1.6rem;
     text-align: left;
@@ -73,6 +69,7 @@
     width: 100%;
     margin-bottom: 1.5rem;
     display: inline-block;
+    color: #772ce8;
 }
 @media only screen and (max-width: 768px) {
     .FullBlog {
@@ -80,7 +77,6 @@
         /* padding: 2rem 5rem; */
         margin: 0 auto;
         padding: 1rem 0.5rem;
-        text-align: center;
     }
 }
 
@@ -91,6 +87,17 @@
     .FullBlog .Time p {
         font-size: 1.6rem;
         color: #ccc;
+    }
+    .FullBlog .Time {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .FullBlog .Time span {
+        margin-left: 0 !important;
+        width: 15rem !important;
+    }
+    .FullBlog .Time p:not(:first-child) {
+        margin-left: 0rem;
     }
     .FullBlog .Body {
         padding: 7rem 0.5rem 0;
