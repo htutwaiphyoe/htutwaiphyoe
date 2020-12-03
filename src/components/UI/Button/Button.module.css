@@ -1,7 +1,7 @@
 .Button {
     border-radius: 10rem;
     padding: 1rem 2rem;
-    background-color: #772ce8;
+    background-color: var(--color-primary);
     /* background-color: #7f51a9; */
     /*background-color: #6f57af;
     */
@@ -18,14 +18,15 @@
     -o-transition: background-color 0.2s;
 }
 .Button a {
-    color: #e4e6eb;
+    color: var(--foreground);
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.55rem;
 }
 
 .Button:hover {
-    background-color: #7e51a998;
+    background-color: var(--color-primary-light);
 }
+
 @keyframes fadeInButton {
     0% {
         opacity: 0;

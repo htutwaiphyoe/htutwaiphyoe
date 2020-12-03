@@ -122,10 +122,10 @@ const FullBlog = (props) => {
                     </figure>
                 </div>
                 <div className={classes.Body}>
-                    {blog.body.map((b) => {
+                    {blog.body.map((b, i) => {
                         if (b.type === "code") {
                             return (
-                                <div className={classes.Code}>
+                                <div className={classes.Code} key={i}>
                                     <pre>{b.body}</pre>
                                 </div>
                             );
@@ -138,15 +138,27 @@ const FullBlog = (props) => {
                                     target="_blank"
                                     rel="noreferrer"
                                     className={classes.Link}
+                                    key={i}
                                 >
                                     {b.body}
                                 </a>
                             );
                         }
                         if (b.type === "image") {
-                            return <img src={b.body} alt="Example Code" className={classes.Img} />;
+                            return (
+                                <img
+                                    src={b.body}
+                                    alt="Example Code"
+                                    className={classes.Img}
+                                    key={i}
+                                />
+                            );
                         }
-                        return <p className={classes.Text}>{b.body}</p>;
+                        return (
+                            <p className={classes.Text} key={i}>
+                                {b.body}
+                            </p>
+                        );
                     })}
                 </div>
             </div>

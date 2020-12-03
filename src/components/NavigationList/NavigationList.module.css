@@ -16,7 +16,7 @@
 }
 .NavigationList ul li a:link,
 .NavigationList ul li a:visited {
-    color: #f7f7f7;
+    color: var(--foreground);
     font-size: 1.8rem;
     padding-bottom: 0.5rem;
     text-decoration: none;
@@ -27,7 +27,7 @@
     width: 0%;
     height: 1px;
     bottom: 0;
-    background-color: #f7f7f7;
+    background-color: var(--foreground);
     left: 0;
     position: absolute;
     transform-origin: center;
@@ -46,7 +46,11 @@
 }
 
 @media only screen and (max-width: 576px) {
-    .NavigationList {
-        display: none;
+    .NavigationList ul li {
+        padding: 0 0.7rem;
+    }
+    .NavigationList ul li a:link,
+    .NavigationList ul li a:visited {
+        font-size: 1.67rem;
     }
 }

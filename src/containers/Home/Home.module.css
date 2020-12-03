@@ -32,7 +32,38 @@
     animation: fadeInh1 0.5s linear;
     -webkit-animation: fadeInh1 0.5s linear;
 }
+@media only screen and (max-width: 768px) {
+    .Home h2 {
+        font-size: 3rem;
 
+        letter-spacing: 1.5rem;
+    }
+    .Home h1 {
+        font-size: 6rem;
+        font-weight: 600;
+        letter-spacing: 2.5rem;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .Home h2 {
+        font-size: 2.5rem;
+        letter-spacing: 1rem;
+    }
+    .Home h1 {
+        font-size: 5rem;
+        letter-spacing: 1.5rem;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .Home h2 {
+        font-size: 2.3rem;
+        letter-spacing: 0.5rem;
+    }
+    .Home h1 {
+        font-size: 4.3rem;
+        letter-spacing: 1rem;
+    }
+}
 @keyframes fadeInh2 {
     0% {
         transform: translateX(2rem);
@@ -79,4 +110,3 @@
         -o-transform: translateX(0);
     }
 }
-

@@ -17,9 +17,9 @@ const Blog = (props) => {
                 data.unshift({ id: i, ...res.data[i] });
             }
             setBlogs(data);
-            timer = setTimeout(() => {
-                setLoading(false);
-            }, 500);
+            // timer = setTimeout(() => {
+            setLoading(false);
+            // }, 500);
         });
         return () => {
             clearTimeout(timer);

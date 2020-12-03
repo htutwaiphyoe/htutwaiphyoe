@@ -1,14 +1,14 @@
 .Blog {
     width: 100%;
-    padding: 2rem 2rem;
+    padding: 0.5rem 2rem 2rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
 .Blog .BlogItem {
     width: 100%;
-    background-color: #242526;
-    color: #e4e6eb;
+    background-color: var(--color-dark-2);
+    color: var(--foreground);
     border-radius: 0.7rem;
     -webkit-border-radius: 0.7rem;
     -moz-border-radius: 0.7rem;
@@ -45,13 +45,13 @@
 .tag {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: #772ce8;
+    color: var(--color-primary);
 }
 .time {
     display: flex;
     font-size: 1.5rem;
     align-items: center;
-    color: #aaa;
+    color: var(--color-light-2);
     justify-content: space-between;
     margin-bottom: 1rem;
 }
@@ -63,6 +63,6 @@
 @media only screen and (max-width: 576px) {
     .Blog {
         grid-template-columns: 1fr;
-        padding: 2rem 1rem;
+        padding: 0.5rem 1rem 1rem;
     }
 }
