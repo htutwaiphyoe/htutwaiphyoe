@@ -1,27 +1,31 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import Skeleton from "@material-ui/lab/Skeleton";
-import axios from "axios";
+import { useSelector, useDispatch } from "react-redux";
 
 import NavigationList from "../../components/NavigationList/NavigationList";
+import * as actionCreators from "../../store/actions";
 import classes from "./FullBlog.module.css";
 const FullBlog = (props) => {
-    const [blog, setBlog] = useState(null);
-    window.scrollTo(0, 0);
-    useEffect(() => {
-        let timer;
-        axios
-            .get(`https://portfolio-80db9.firebaseio.com/blogs/${props.match.params.id}.json`)
-            .then((res) => {
-                console.log(res.data);
+    const fullBlog = useSelector((state) => state.blogs.fullBlog);
+    const blogs = useSelector((state) => state.blogs.blogs);
+    const dispatch = useDispatch();
 
-                timer = setTimeout(() => {
-                    setBlog(res.data);
-                }, 500);
-            });
+    window.scrollTo(0, 0);
+
+    useEffect(() => {
+        if (blogs.length === 0) {
+            dispatch(actionCreators.fetchBlog(props.match.params.id));
+        } else {
+            const blog = blogs.find((b) => b.id === props.match.params.id);
+            if (blog) {
+                dispatch(actionCreators.loadFullBlog(blog));
+            }
+        }
         return () => {
-            clearTimeout(timer);
+            dispatch(actionCreators.clearFullBlog());
         };
-    }, [props.match.params.id]);
+    }, [props.match.params.id, dispatch, blogs]);
+
     let component = (
         <div className={classes.FullBlog}>
             <Skeleton
@@ -101,28 +105,28 @@ const FullBlog = (props) => {
             </div>
         </div>
     );
-    if (blog) {
+    if (fullBlog) {
         component = (
             <div className={classes.FullBlog}>
-                <h2>{blog.title}</h2>
+                <h2>{fullBlog.title}</h2>
                 <div className={classes.Time}>
-                    <p>#{blog.topic}</p>
-                    <p>{blog.date}</p>
-                    <p>{blog.duration} mins to read</p>
+                    <p>#{fullBlog.topic}</p>
+                    <p>{fullBlog.date}</p>
+                    <p>{fullBlog.duration} mins to read</p>
                 </div>
                 <div className={classes.Image}>
                     <figure
                         style={{
-                            backgroundImage: `url('${blog.coverImageURL}')`,
+                            backgroundImage: `url('${fullBlog.coverImageURL}')`,
                             backgroundSize: "cover",
                             backgroundPosition: "center center",
                         }}
                     >
-                        <img src={blog.coverImageURL} alt={blog.title} />
+                        <img src={fullBlog.coverImageURL} alt={fullBlog.title} />
                     </figure>
                 </div>
                 <div className={classes.Body}>
-                    {blog.body.map((b, i) => {
+                    {fullBlog.body.map((b, i) => {
                         if (b.type === "code") {
                             return (
                                 <div className={classes.Code} key={i}>

@@ -1,85 +1,76 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import Skeleton from "@material-ui/lab/Skeleton";
-import axios from "axios";
-import NavigationList from "../../components/NavigationList/NavigationList";
 
+import { useSelector, useDispatch } from "react-redux";
+
+import NavigationList from "../../components/NavigationList/NavigationList";
+import * as actionCreators from "../../store/actions";
 import classes from "./Blog.module.css";
 const Blog = (props) => {
-    const [blogs, setBlogs] = useState([]);
-    const [loading, setLoading] = useState(false);
+    const blogs = useSelector((state) => state.blogs.blogs);
+    const dispatch = useDispatch();
+
     window.scrollTo(0, 0);
     useEffect(() => {
-        setLoading(true);
-        let timer;
-        axios.get("https://portfolio-80db9.firebaseio.com/blogs.json").then((res) => {
-            let data = [];
-            for (let i in res.data) {
-                data.unshift({ id: i, ...res.data[i] });
-            }
-            setBlogs(data);
-            // timer = setTimeout(() => {
-            setLoading(false);
-            // }, 500);
-        });
-        return () => {
-            clearTimeout(timer);
-        };
-    }, []);
+        if (blogs.length === 0) {
+            dispatch(actionCreators.fetchBlogs());
+        }
+    }, [blogs.length, dispatch]);
     const onClickHandler = (id) => {
         props.history.push(`/blogs/${id}`);
     };
-    let components = null;
-    if (loading) {
-        components = [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }, { id: 5 }, { id: 6 }].map(
-            (blog) => (
-                <div className={classes.BlogItem} key={blog.id}>
-                    <figure className={classes.ItemImage}>
-                        <Skeleton
-                            variant="rect"
-                            width="100%"
-                            height={200}
-                            animation="wave"
-                            style={{ backgroundColor: "#2C2E2F" }}
-                        />
-                    </figure>
 
-                    <div className={classes.ItemText}>
-                        <Skeleton
-                            variant="text"
-                            width="30%"
-                            animation="wave"
-                            style={{ backgroundColor: "#2C2E2F" }}
-                        />
+    let components = [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }, { id: 5 }, { id: 6 }].map(
+        (blog) => (
+            <div className={classes.BlogItem} key={blog.id}>
+                <figure className={classes.ItemImage}>
+                    <Skeleton
+                        variant="rect"
+                        width="100%"
+                        height={200}
+                        animation="wave"
+                        style={{ backgroundColor: "#2C2E2F" }}
+                    />
+                </figure>
 
-                        <div className={classes.time}>
-                            <Skeleton
-                                variant="text"
-                                width="20%"
-                                animation="wave"
-                                style={{ backgroundColor: "#2C2E2F" }}
-                            />
-                            <Skeleton
-                                variant="text"
-                                width="20%"
-                                animation="wave"
-                                style={{ backgroundColor: "#2C2E2F" }}
-                            />
-                        </div>
+                <div className={classes.ItemText}>
+                    <Skeleton
+                        variant="text"
+                        width="30%"
+                        animation="wave"
+                        style={{ backgroundColor: "#2C2E2F" }}
+                    />
+
+                    <div className={classes.time}>
                         <Skeleton
                             variant="text"
+                            width="20%"
                             animation="wave"
                             style={{ backgroundColor: "#2C2E2F" }}
                         />
                         <Skeleton
                             variant="text"
+                            width="20%"
                             animation="wave"
                             style={{ backgroundColor: "#2C2E2F" }}
                         />
                     </div>
+                    <Skeleton
+                        variant="text"
+                        animation="wave"
+                        style={{ backgroundColor: "#2C2E2F" }}
+                    />
+                    <Skeleton
+                        variant="text"
+                        animation="wave"
+                        style={{ backgroundColor: "#2C2E2F" }}
+                    />
                 </div>
-            )
-        );
-    } else {
+            </div>
+        )
+    );
+
+    if (blogs.length > 0) {
         components = blogs.map((blog) => (
             <div
                 className={classes.BlogItem}
