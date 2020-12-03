@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useSelector, useDispatch } from "react-redux";
 
 import NavigationList from "../../components/NavigationList/NavigationList";
 import Button from "../../components/UI/Button/Button";
@@ -99,10 +100,33 @@ const Contact = (props) => {
         },
     });
     const [contactFormValid, setContactFormValid] = useState(false);
+    const dispatch = useDispatch();
+    const loading = useSelector((state) => state.ui.loading);
     const onSubmitHandler = (e) => {
         e.preventDefault();
         if (contactFormValid) {
-            console.log("ready");
+            setContactFormValid(false);
+            dispatch(
+                actionCreators.submitForm({
+                    name: contactForm.name.value,
+                    email: contactForm.email.value,
+                    message: contactForm.message.value,
+                    method: contactForm.method.value,
+                })
+            );
+            const updatedContactForm = {
+                ...contactForm,
+            };
+            for (let key in updatedContactForm) {
+                const updatedFormElement = { ...updatedContactForm[key] };
+                if (key === "method") {
+                    updatedFormElement.value = "select";
+                } else {
+                    updatedFormElement.value = "";
+                }
+                updatedContactForm[key] = updatedFormElement;
+            }
+            setContactForm(updatedContactForm);
         }
     };
 
@@ -187,7 +211,7 @@ const Contact = (props) => {
                     />{" "}
                     */}
                     <Button type="submit" disabled={!contactFormValid}>
-                        I'd love your message
+                        {loading ? "I'd love your message" : "Send it to me"}
                     </Button>
                 </form>
             </div>
