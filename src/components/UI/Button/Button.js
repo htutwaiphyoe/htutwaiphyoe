@@ -4,8 +4,11 @@ const Button = (props) => {
     if (props.animation) {
         cssClasses.push(classes.animation);
     }
+    if (props.disabled) {
+        cssClasses.push(classes.disabled);
+    }
     return (
-        <button className={cssClasses.join(" ")} onClick={props.onClickHandler}>
+        <button className={cssClasses.join(" ")} onClick={props.onClickHandler} {...props}>
             {props.children}
         </button>
     );

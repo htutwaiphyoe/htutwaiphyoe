@@ -1,0 +1,6 @@
+.Invalid {
+    border-bottom: 1px solid red;
+}
+.Touch {
+    border-bottom: 1px solid var(--color-primary) !important;
+}
