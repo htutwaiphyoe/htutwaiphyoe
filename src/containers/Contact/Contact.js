@@ -5,21 +5,25 @@ import * as actionCreators from "../../store/actions";
 import classes from "./Contact.module.css";
 const contactData = {
     info: [
-        { type: "location", icon: "map marker alternate", content: "Mandalay, Myanmar" },
-        { type: "email", icon: "envelope", content: "htutwaiphyoe@mtu.edu.mm" },
-        { type: "mobile", icon: "mobile", content: "+95979865290" },
+        { type: "location", icon: "location-sharp", content: "Mandalay, Myanmar" },
+        { type: "email", icon: "mail-unread-sharp", content: "htutwaiphyoe@mtu.edu.mm" },
+        { type: "mobile", icon: "call-sharp", content: "+95979865290" },
     ],
     socials: [
-        { type: "facebook", icon: "facebook f", link: "https://www.facebook.com/real.hwp" },
-        { type: "instagram", icon: "instagram", link: "https://www.instagram.com/htutwaiphyoe" },
-        { type: "twitter", icon: "twitter", link: "https://twitter.com/Htut_Wai_Phyoe" },
-        { type: "snapchat", icon: "snapchat ghost", link: "" },
+        { type: "facebook", icon: "logo-facebook", link: "https://www.facebook.com/real.hwp" },
+        {
+            type: "instagram",
+            icon: "logo-instagram",
+            link: "https://www.instagram.com/htutwaiphyoe",
+        },
+        { type: "twitter", icon: "logo-twitter", link: "https://twitter.com/Htut_Wai_Phyoe" },
+        { type: "snapchat", icon: "logo-snapchat", link: "" },
         {
             type: "linkedin",
-            icon: "linkedin",
+            icon: "logo-linkedin",
             link: "https://www.linkedin.com/in/htut-wai-phyoe-876a21190",
         },
-        { type: "github", icon: "github", link: "https://github.com/htutwaiphyoe" },
+        { type: "github", icon: "logo-github", link: "https://github.com/htutwaiphyoe" },
     ],
 };
 
@@ -37,7 +41,7 @@ const Contact = (props) => {
                         <ul>
                             {contactData.info.map((item) => (
                                 <li key={item.type}>
-                                    <i className={`${item.icon} icon big`}></i>
+                                    <ion-icon name={item.icon} size="large"></ion-icon>
                                     <span>{item.content}</span>
                                 </li>
                             ))}
@@ -49,25 +53,26 @@ const Contact = (props) => {
                             {contactData.socials.map((item) => (
                                 <li key={item.type}>
                                     <a href={item.link} target="_blank" rel="noopener noreferrer">
-                                        <i className={`${item.icon} icon big`}></i>
+                                        <ion-icon name={item.icon} size="large"></ion-icon>
                                     </a>
                                 </li>
                             ))}
                         </ul>
                     </div>
                 </div>
-                <div className={classes.Form}>
-                    <h1>Collaborate with me</h1>
-                    <form onSubmit={onSubmitHandler}>
-                        <input type="text" placeholder="Name" />
-                        <input type="email" placeholder="Email" />
-                        <select>
-                            <option value=""></option>
-                        </select>
-                        <textarea rows="6" />
-                        <Button>Send it to me</Button>
-                    </form>
-                </div>
+
+                <form onSubmit={onSubmitHandler} className={classes.Form}>
+                    <input type="text" placeholder="Name" className={classes.Input} />
+                    <input type="email" placeholder="Email" className={classes.Input} />
+                    <select className={classes.Input}>
+                        <option>Select one...</option>
+                        <option value="just chat">Just chat</option>
+                        <option value="hire me">Hire me</option>
+                        <option value="freelance projects">Freelance projects</option>
+                    </select>
+                    <textarea rows="6" className={classes.Input} placeholder="Message" />
+                    <Button>I'd love your message</Button>
+                </form>
             </div>
         </React.Fragment>
     );

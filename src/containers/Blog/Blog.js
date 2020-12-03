@@ -10,7 +10,7 @@ const Blog = (props) => {
     const blogs = useSelector((state) => state.blogs.blogs);
     const dispatch = useDispatch();
 
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
     useEffect(() => {
         if (blogs.length === 0) {
             dispatch(actionCreators.fetchBlogs());

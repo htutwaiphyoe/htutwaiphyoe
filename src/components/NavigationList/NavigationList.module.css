@@ -32,9 +32,9 @@
 .NavigationList ul li a::after {
     content: "";
     width: 0%;
-    height: 1px;
+    height: 2px;
     bottom: 0;
-    background-color: var(--foreground);
+    background-color: var(--color-primary);
     left: 0;
     position: absolute;
     transform-origin: center;

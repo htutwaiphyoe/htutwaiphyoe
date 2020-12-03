@@ -4,15 +4,16 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
-    padding: 10rem 2rem 0;
+    padding: 7rem 2rem 0;
 }
 .Contact .Info {
     width: 100%;
     animation: slideInInfo 0.5s;
     -webkit-animation: slideInInfo 0.5s;
 }
-.Contact .Info h2 {
+.Contact h2 {
     font-size: 3.5rem;
+    font-weight: 400;
 }
 .Contact .Info ul {
     list-style: none;
@@ -25,7 +26,7 @@
 }
 .Contact .Info span {
     font-size: 2rem;
-    margin-left: 1rem;
+    margin-left: 2rem;
 }
 .Contact .Info .SocialList {
     display: flex;
@@ -42,9 +43,26 @@
 }
 .Contact .Form {
     width: 100%;
-    display: flex;
+
     animation: slideInForm 0.5s;
+    display: grid;
+    gap: 2rem;
     -webkit-animation: slideInForm 0.5s;
+}
+
+.Contact .Form .Input {
+    background-color: var(--color-dark-2);
+    border: none;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    font-family: inherit;
+    color: var(--foreground);
+}
+.Contact .Form .Input:focus {
+    outline: none;
+}
+.Contact .Form button {
+    justify-self: center;
 }
 
 @keyframes slideInInfo {
