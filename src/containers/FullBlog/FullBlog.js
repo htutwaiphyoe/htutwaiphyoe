@@ -66,7 +66,7 @@ const FullBlog = (props) => {
                 />
             </div>
             <div className={classes.Image}>
-                <figure>
+                <div>
                     <Skeleton
                         variant="rect"
                         width="100%"
@@ -74,7 +74,7 @@ const FullBlog = (props) => {
                         animation="wave"
                         style={{ backgroundColor: "#2C2E2F" }}
                     />
-                </figure>
+                </div>
             </div>
             <div className={classes.Body} style={{ backgroundColor: "#242526" }}>
                 <Skeleton
@@ -115,7 +115,7 @@ const FullBlog = (props) => {
                     <p>{fullBlog.duration} mins to read</p>
                 </div>
                 <div className={classes.Image}>
-                    <figure
+                    <div
                         style={{
                             backgroundImage: `url('${fullBlog.coverImageURL}')`,
                             backgroundSize: "cover",
@@ -123,7 +123,7 @@ const FullBlog = (props) => {
                         }}
                     >
                         <img src={fullBlog.coverImageURL} alt={fullBlog.title} />
-                    </figure>
+                    </div>
                 </div>
                 <div className={classes.Body}>
                     {fullBlog.body.map((b, i) => {
@@ -133,6 +133,9 @@ const FullBlog = (props) => {
                                     <pre>{b.body}</pre>
                                 </div>
                             );
+                        }
+                        if (b.type === "heading") {
+                            return <h3 className={classes.Heading}>{b.body}</h3>;
                         }
                         if (b.type === "link") {
                             return (

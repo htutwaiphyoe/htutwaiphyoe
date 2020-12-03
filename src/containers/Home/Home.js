@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useCallback } from "react";
 import NavigationList from "../../components/NavigationList/NavigationList";
 import Button from "../../components/UI/Button/Button";
 import classes from "./Home.module.css";
@@ -24,15 +24,20 @@ const Home = (props) => {
         };
         typeWriter();
     }, []);
+    const onButtonClick = useCallback(() => {
+        props.history.push("/blogs");
+    }, [props.history]);
     return (
         <header className={classes.Home}>
-            <NavigationList />
+            <NavigationList transparent={true} />
             <div className={classes.Hero}>
                 <div>
                     <h1>GIVING UP</h1>
                     <h2 ref={heading}>IS </h2>
                 </div>
-                <Button route="/blogs" content="Discover Blogs" />
+                <Button onClickHandler={onButtonClick} animation={true}>
+                    Discover Blogs
+                </Button>
             </div>
         </header>
     );

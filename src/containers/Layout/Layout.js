@@ -1,5 +1,13 @@
+import React from "react";
+// import NavigationList from "../../components/NavigationList/NavigationList";
+
 const Layout = (props) => {
-    return <main>{props.children}</main>;
+    return (
+        <React.Fragment>
+            {/* <NavigationList /> */}
+            <main>{props.children}</main>
+        </React.Fragment>
+    );
 };
 
 export default Layout;

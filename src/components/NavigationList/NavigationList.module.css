@@ -4,6 +4,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--background);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.Transparent {
+    background-color: transparent;
 }
 .NavigationList ul {
     list-style: none;

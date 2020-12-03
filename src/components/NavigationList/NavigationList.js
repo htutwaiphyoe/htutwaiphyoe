@@ -9,6 +9,10 @@ const navItems = [
     { route: "/contact", content: "Contact" },
 ];
 const NavigationList = (props) => {
+    let cssClasses = [classes.NavigationList];
+    if (props.transparent) {
+        cssClasses.push(classes.Transparent);
+    }
     let navItemsComponent = navItems.map((item, index) => (
         <li key={index}>
             <NavLink
@@ -21,7 +25,7 @@ const NavigationList = (props) => {
         </li>
     ));
     return (
-        <nav className={classes.NavigationList}>
+        <nav className={cssClasses.join(" ")}>
             <ul>{navItemsComponent}</ul>
         </nav>
     );

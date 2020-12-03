@@ -23,7 +23,7 @@ const Blog = (props) => {
     let components = [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }, { id: 5 }, { id: 6 }].map(
         (blog) => (
             <div className={classes.BlogItem} key={blog.id}>
-                <figure className={classes.ItemImage}>
+                <div className={classes.ItemImage}>
                     <Skeleton
                         variant="rect"
                         width="100%"
@@ -31,7 +31,7 @@ const Blog = (props) => {
                         animation="wave"
                         style={{ backgroundColor: "#2C2E2F" }}
                     />
-                </figure>
+                </div>
 
                 <div className={classes.ItemText}>
                     <Skeleton
@@ -77,7 +77,7 @@ const Blog = (props) => {
                 key={blog.id}
                 onClick={onClickHandler.bind(this, blog.id)}
             >
-                <figure
+                <div
                     className={classes.ItemImage}
                     style={{
                         backgroundImage: `url('${blog.coverImageURL}')`,
@@ -86,7 +86,7 @@ const Blog = (props) => {
                     }}
                 >
                     <img src={`${blog.coverImageURL}`} alt={`${blog.title}`} />
-                </figure>
+                </div>
 
                 <div className={classes.ItemText}>
                     <p className={classes.tag}>#{blog.topic}</p>
