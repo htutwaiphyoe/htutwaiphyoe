@@ -1,7 +1,7 @@
 .FullBlog {
     width: 76rem;
     margin: 0 auto;
-    padding: 0 1rem 1rem;
+    padding: 2rem 1rem 1rem;
     color: var(--foreground);
 }
 .FullBlog h2 {
@@ -76,7 +76,7 @@
 @media only screen and (max-width: 768px) {
     .FullBlog {
         width: 100%;
-        padding: 0 0.5rem 0.5rem;
+        padding: 1rem 0.5rem 0.5rem;
     }
 }
 

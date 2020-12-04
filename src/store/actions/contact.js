@@ -1,4 +1,3 @@
-import * as actionTypes from "./actionTypes";
 import htutwaiphyoe from "../../api/htutwaiphyoe";
 import { sendRequest, showError } from "./ui";
 export const submitForm = (data) => async (dispatch) => {

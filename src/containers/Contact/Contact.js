@@ -211,7 +211,7 @@ const Contact = (props) => {
                 <form onSubmit={onSubmitHandler} className={classes.Form}>
                     {contactFormDom}
 
-                    <Button type="submit" disabled={!contactFormValid}>
+                    <Button type="submit" disabled={!contactFormValid} animation={false}>
                         {loading ? "I'd love your message" : "Send it to me"}
                     </Button>
                 </form>

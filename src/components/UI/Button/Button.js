@@ -8,7 +8,7 @@ const Button = (props) => {
         cssClasses.push(classes.disabled);
     }
     return (
-        <button className={cssClasses.join(" ")} onClick={props.onClickHandler} {...props}>
+        <button className={cssClasses.join(" ")} onClick={props.onClickHandler}>
             {props.children}
         </button>
     );

@@ -12,7 +12,9 @@ const FullBlog = (props) => {
     const error = useSelector((state) => state.ui.error);
     const dispatch = useDispatch();
 
-    window.scrollTo(0, 0);
+    useEffect(() => {
+        window.scrollTo({ top: 0 });
+    });
 
     useEffect(() => {
         if (blogs.length === 0) {
@@ -128,7 +130,7 @@ const FullBlog = (props) => {
                     <div
                         style={{
                             backgroundImage: `url('${fullBlog.coverImageURL}')`,
-                            backgroundSize: "cover",
+                            backgroundSize: "100%",
                             backgroundPosition: "center center",
                         }}
                     >

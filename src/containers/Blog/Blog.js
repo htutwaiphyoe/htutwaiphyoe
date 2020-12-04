@@ -12,7 +12,9 @@ const Blog = (props) => {
     const error = useSelector((state) => state.ui.error);
     const dispatch = useDispatch();
 
-    // window.scrollTo(0, 0);
+    useEffect(() => {
+        window.scrollTo({ top: 0 });
+    });
     useEffect(() => {
         if (blogs.length === 0) {
             dispatch(actionCreators.fetchBlogs());
@@ -90,7 +92,7 @@ const Blog = (props) => {
                     className={classes.ItemImage}
                     style={{
                         backgroundImage: `url('${blog.coverImageURL}')`,
-                        backgroundSize: "cover",
+                        backgroundSize: "100%",
                         backgroundPosition: "center center",
                     }}
                 >

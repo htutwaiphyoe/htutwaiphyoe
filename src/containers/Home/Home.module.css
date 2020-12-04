@@ -2,9 +2,9 @@
     width: 100%;
     height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url("../../assets/imgs/altumcode-dMUt0X3f59Q-unsplash.jpg");
+        url("../../assets/imgs/cover.jpg");
     background-position: center;
-    background-size: cover;
+    background-size: 100%;
 }
 .Hero {
     width: 100%;

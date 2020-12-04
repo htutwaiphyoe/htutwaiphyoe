@@ -7,6 +7,7 @@ const Home = React.lazy(() => import("./Home/Home"));
 const Blog = React.lazy(() => import("./Blog/Blog"));
 const FullBlog = React.lazy(() => import("./FullBlog/FullBlog"));
 const Contact = React.lazy(() => import("./Contact/Contact"));
+const About = React.lazy(() => import("./About/About"));
 
 const App = (props) => {
     return (
@@ -17,7 +18,7 @@ const App = (props) => {
                         <Route path="/" exact component={Home} />
                         <Route path="/blogs" exact component={Blog} />
                         <Route path="/blogs/:id" exact component={FullBlog} />
-                        <Route path="/about" exact component={Home} />
+                        <Route path="/about" exact component={About} />
                         <Route path="/contact" exact component={Contact} />
                         <Route path="/portfolio" exact component={Home} />
                     </Suspense>
