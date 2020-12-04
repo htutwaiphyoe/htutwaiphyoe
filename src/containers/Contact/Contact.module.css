@@ -1,4 +1,5 @@
 .Contact {
+    /* width: 110rem; */
     width: 90%;
     margin: 0 auto;
     display: grid;
@@ -12,7 +13,7 @@
     -webkit-animation: slideInInfo 0.5s;
 }
 .Contact h2 {
-    font-size: 3.5rem;
+    font-size: 3.2rem;
     font-weight: 400;
 }
 .Contact .Info ul {
@@ -28,7 +29,7 @@
     margin-bottom: 1rem;
 }
 .Contact .Info span {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-left: 2rem;
 }
 .Contact .Info .SocialList {
@@ -68,7 +69,39 @@
 .Contact .Form button {
     justify-self: center;
 }
-
+@media only screen and (min-width: 1199px) {
+    .Contact {
+        width: 115rem;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .Contact {
+        width: 95%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .Contact {
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 1rem 3rem 2rem;
+        text-align: center;
+    }
+    .List {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .Contact {
+        padding: 1rem 0.5rem 2rem;
+    }
+    .Contact h2 {
+        font-size: 3rem;
+        font-weight: 400;
+    }
+}
 @keyframes slideInInfo {
     0% {
         transform: translateX(-100%);

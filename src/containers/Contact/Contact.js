@@ -186,30 +186,21 @@ const Contact = (props) => {
                 <div className={classes.Info}>
                     <div className={classes.InfoBox}>
                         <h2>Contact information</h2>
-                        <ul>{contactInfo}</ul>
+                        <div className={classes.List}>
+                            <ul>{contactInfo}</ul>
+                        </div>
                     </div>
                     <div>
-                        <h2>Keep in touch on social media</h2>
-                        <ul className={classes.SocialList}>{contactMedia}</ul>
+                        <h2>Get in touch on social media</h2>
+                        <div className={classes.List}>
+                            <ul className={classes.SocialList}>{contactMedia}</ul>{" "}
+                        </div>
                     </div>
                 </div>
 
                 <form onSubmit={onSubmitHandler} className={classes.Form}>
                     {contactFormDom}
-                    {/* <FormElement type="text" placeholder="Name" className={classes.Input} />
-                    <FormElement type="email" placeholder="Email" className={classes.Input} />
-                    <FormElement className={classes.Input} type="select" />
-                    {/* <option>Select one...</option>
-                        <option value="just chat">Just chat</option>
-                        <option value="hire me">Hire me</option>
-                        <option value="freelance projects">Freelance projects</option> */}
-                    {/* <FormElement
-                        rows="6"
-                        className={classes.Input}
-                        placeholder="Message"
-                        type="textarea"
-                    />{" "}
-                    */}
+
                     <Button type="submit" disabled={!contactFormValid}>
                         {loading ? "I'd love your message" : "Send it to me"}
                     </Button>

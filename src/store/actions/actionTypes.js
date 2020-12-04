@@ -8,3 +8,4 @@ export const SUBMIT_FORM = "SUBMIT_FORM";
 
 // UI
 export const SEND_REQUEST = "SEND_REQUEST";
+export const SHOW_TOAST = "SHOW_TOAST";
