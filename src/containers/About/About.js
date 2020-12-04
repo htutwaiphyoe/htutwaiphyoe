@@ -15,13 +15,12 @@ const About = (props) => {
                     <div className={classes.IntroText}>
                         <h1>Hi! I'm Htut Wai Phyoe</h1>
                         <p>
-                            What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing
-                            and typesetting industry. Lorem Ipsum has been the industry's standard
-                            dummy text ever since the 1500s, when an unknown printer took a galley
-                            of type and scrambled it to make a type specimen book. It has survived
-                            not only five centuries, but also the leap into electronic typesetting,
-                            remaining essentially unchanged. It was popularised in the 1960s with
-                            the release of Letraset sheets containing Lorem Ipsum passages.
+                            I'm currently a 20 years old university student studying at Mandalay
+                            Technological University specialized in Computer Engineering &
+                            Information Technology. I started coding during second year and now I
+                            extremely have a passion on programming and apparently I'm pursuing Web
+                            Development. I also write articles about Web Development. Feel free to
+                            contact if you have something with me.
                         </p>
                     </div>
                 </div>

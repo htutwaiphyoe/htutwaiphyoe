@@ -128,11 +128,11 @@ const FullBlog = (props) => {
                 </div>
                 <div className={classes.Image}>
                     <div
-                        style={{
-                            backgroundImage: `url('${fullBlog.coverImageURL}')`,
-                            backgroundSize: "100%",
-                            backgroundPosition: "center center",
-                        }}
+                    // style={{
+                    //     backgroundImage: `url('${fullBlog.coverImageURL}')`,
+                    //     backgroundSize: "cover",
+                    //     backgroundPosition: "center center",
+                    // }}
                     >
                         <img src={fullBlog.coverImageURL} alt={fullBlog.title} />
                     </div>

@@ -4,7 +4,7 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
         url("../../assets/imgs/cover.jpg");
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
 }
 .Hero {
     width: 100%;

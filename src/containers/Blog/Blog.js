@@ -88,14 +88,7 @@ const Blog = (props) => {
                 key={blog.id}
                 onClick={onClickHandler.bind(this, blog.id)}
             >
-                <div
-                    className={classes.ItemImage}
-                    style={{
-                        backgroundImage: `url('${blog.coverImageURL}')`,
-                        backgroundSize: "100%",
-                        backgroundPosition: "center center",
-                    }}
-                >
+                <div className={classes.ItemImage}>
                     <img src={`${blog.coverImageURL}`} alt={`${blog.title}`} />
                 </div>
 
