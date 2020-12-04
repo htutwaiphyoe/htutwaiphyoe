@@ -4,10 +4,12 @@ import { useSelector, useDispatch } from "react-redux";
 
 import NavigationList from "../../components/NavigationList/NavigationList";
 import * as actionCreators from "../../store/actions";
+import MessageBox from "../../components/UI/MessageBox/MessageBox";
 import classes from "./FullBlog.module.css";
 const FullBlog = (props) => {
     const fullBlog = useSelector((state) => state.blogs.fullBlog);
     const blogs = useSelector((state) => state.blogs.blogs);
+    const error = useSelector((state) => state.ui.error);
     const dispatch = useDispatch();
 
     window.scrollTo(0, 0);
@@ -105,6 +107,14 @@ const FullBlog = (props) => {
             </div>
         </div>
     );
+    if (error) {
+        return (
+            <React.Fragment>
+                <NavigationList />
+                <MessageBox message={error.message} />
+            </React.Fragment>
+        );
+    }
     if (fullBlog) {
         component = (
             <div className={classes.FullBlog}>

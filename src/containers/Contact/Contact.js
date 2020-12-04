@@ -6,6 +6,7 @@ import Button from "../../components/UI/Button/Button";
 import FormElement from "../../components/UI/FormElement/FormElement";
 import * as actionCreators from "../../store/actions";
 import { checkValidations } from "../../utils/utils";
+import MessageBox from "../../components/UI/MessageBox/MessageBox";
 import classes from "./Contact.module.css";
 const contactData = {
     info: [
@@ -99,6 +100,7 @@ const Contact = (props) => {
             touch: false,
         },
     });
+    const error = useSelector((state) => state.ui.error);
     const [contactFormValid, setContactFormValid] = useState(false);
     const dispatch = useDispatch();
     const loading = useSelector((state) => state.ui.loading);
@@ -179,6 +181,14 @@ const Contact = (props) => {
             onChangeHandler={(e) => onChangeHandler(e, el.id)}
         />
     ));
+    if (error) {
+        return (
+            <React.Fragment>
+                <NavigationList />
+                <MessageBox message={error.message} />
+            </React.Fragment>
+        );
+    }
     return (
         <React.Fragment>
             <NavigationList />

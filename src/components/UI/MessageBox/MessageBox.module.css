@@ -1,0 +1,11 @@
+.MessageBox {
+    width: 100%;
+    height: calc(95vh - 7rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.MessageBox p {
+    font-size: 2rem;
+}

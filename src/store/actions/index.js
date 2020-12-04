@@ -1,3 +1,3 @@
 export { fetchBlogs, fetchBlog, loadFullBlog, clearFullBlog } from "./blogs";
 export { submitForm } from "./contact";
-export { sendRequest } from "./ui";
+export { sendRequest, showError } from "./ui";

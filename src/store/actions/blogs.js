@@ -1,6 +1,6 @@
 import * as actionTypes from "./actionTypes";
 import htutwaiphyoe from "../../api/htutwaiphyoe";
-
+import { showError } from "./ui";
 // Fetch Requests for blogs
 export const loadBlogs = (payload) => {
     return {
@@ -31,6 +31,7 @@ export const fetchBlogs = () => async (dispatch) => {
         dispatch(loadBlogs(data));
     } catch (e) {
         console.log(e);
+        dispatch(showError(e));
     }
 };
 
@@ -40,6 +41,6 @@ export const fetchBlog = (id) => async (dispatch) => {
         dispatch(loadFullBlog(response.data));
         console.log(response.data);
     } catch (e) {
-        console.log(e);
+        dispatch(showError(e));
     }
 };

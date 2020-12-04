@@ -1,6 +1,6 @@
 import * as actionTypes from "./actionTypes";
 import htutwaiphyoe from "../../api/htutwaiphyoe";
-import { sendRequest } from "./ui";
+import { sendRequest, showError } from "./ui";
 export const submitForm = (data) => async (dispatch) => {
     try {
         dispatch(sendRequest(true));
@@ -8,6 +8,6 @@ export const submitForm = (data) => async (dispatch) => {
         console.log(response);
         dispatch(sendRequest(false));
     } catch (e) {
-        console.log(e);
+        dispatch(showError(e));
     }
 };

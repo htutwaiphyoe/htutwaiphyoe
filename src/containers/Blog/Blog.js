@@ -5,9 +5,11 @@ import { useSelector, useDispatch } from "react-redux";
 
 import NavigationList from "../../components/NavigationList/NavigationList";
 import * as actionCreators from "../../store/actions";
+import MessageBox from "../../components/UI/MessageBox/MessageBox";
 import classes from "./Blog.module.css";
 const Blog = (props) => {
     const blogs = useSelector((state) => state.blogs.blogs);
+    const error = useSelector((state) => state.ui.error);
     const dispatch = useDispatch();
 
     // window.scrollTo(0, 0);
@@ -69,7 +71,14 @@ const Blog = (props) => {
             </div>
         )
     );
-
+    if (error) {
+        return (
+            <React.Fragment>
+                <NavigationList />
+                <MessageBox message={error.message} />
+            </React.Fragment>
+        );
+    }
     if (blogs.length > 0) {
         components = blogs.map((blog) => (
             <div

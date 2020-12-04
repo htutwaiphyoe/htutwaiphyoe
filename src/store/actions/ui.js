@@ -6,3 +6,10 @@ export const sendRequest = (payload) => {
         payload,
     };
 };
+
+export const showError = (payload) => {
+    return {
+        type: actionTypes.SHOW_ERROR,
+        payload,
+    };
+};
