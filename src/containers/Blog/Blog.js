@@ -74,12 +74,7 @@ const Blog = (props) => {
         )
     );
     if (error) {
-        return (
-            <React.Fragment>
-                <NavigationList />
-                <MessageBox message={error.message} />
-            </React.Fragment>
-        );
+        return <MessageBox message={error.message} />;
     }
     if (blogs.length > 0) {
         components = blogs.map((blog) => (

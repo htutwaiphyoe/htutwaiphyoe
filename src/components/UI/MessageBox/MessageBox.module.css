@@ -9,3 +9,7 @@
 .MessageBox p {
     font-size: 2rem;
 }
+.MessageBox a {
+    color: var(--color-primary);
+    text-decoration: none;
+}

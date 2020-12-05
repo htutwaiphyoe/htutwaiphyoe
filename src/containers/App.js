@@ -36,20 +36,27 @@ const Portfolio = React.lazy(() => {
     });
 });
 
+const MessageBox = React.lazy(() => {
+    return new Promise((resolve) => {
+        setTimeout(() => resolve(import("../components/UI/MessageBox/MessageBox")), 1000);
+    });
+});
+
 const App = (props) => {
     return (
         <BrowserRouter>
             <Layout>
-                <Switch>
-                    <Suspense fallback={<Loader />}>
+                <Suspense fallback={<Loader />}>
+                    <Switch>
                         <Route path="/" exact component={Home} />
                         <Route path="/blogs" exact component={Blog} />
                         <Route path="/blogs/:id" exact component={FullBlog} />
                         <Route path="/about" exact component={About} />
                         <Route path="/contact" exact component={Contact} />
                         <Route path="/portfolio" exact component={Portfolio} />
-                    </Suspense>
-                </Switch>
+                        <Route render={() => <MessageBox message="404" />} />
+                    </Switch>
+                </Suspense>
             </Layout>
         </BrowserRouter>
     );

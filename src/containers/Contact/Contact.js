@@ -182,12 +182,7 @@ const Contact = (props) => {
         />
     ));
     if (error) {
-        return (
-            <React.Fragment>
-                <NavigationList />
-                <MessageBox message={error.message} />
-            </React.Fragment>
-        );
+        return <MessageBox message={error.message} />;
     }
     return (
         <React.Fragment>

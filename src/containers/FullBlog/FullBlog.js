@@ -156,12 +156,7 @@ const FullBlog = (props) => {
         </div>
     );
     if (error) {
-        return (
-            <React.Fragment>
-                <NavigationList />
-                <MessageBox message={error.message} />
-            </React.Fragment>
-        );
+        return <MessageBox message={error.message} />;
     }
     if (fullBlog) {
         component = (

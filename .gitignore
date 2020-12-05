@@ -7,6 +7,7 @@
 .prettierrc
 .eslintcache
 data.json
+debug.log
 # testing
 /coverage
 
