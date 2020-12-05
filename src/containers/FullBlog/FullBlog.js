@@ -29,45 +29,103 @@ const FullBlog = (props) => {
             dispatch(actionCreators.clearFullBlog());
         };
     }, [props.match.params.id, dispatch, blogs]);
-
+    let skeletons = {
+        heading: [
+            { variant: "text", animation: "wave", width: "80%", color: "#2C2E2F", height: 40 },
+            { variant: "text", animation: "wave", width: "60%", color: "#2C2E2F", height: 40 },
+        ],
+        time: [
+            {
+                variant: "text",
+                animation: "wave",
+                width: "20%",
+                color: "#2C2E2F",
+                height: 30,
+                marginLeft: "0",
+            },
+            {
+                variant: "text",
+                animation: "wave",
+                width: "20%",
+                color: "#2C2E2F",
+                height: 30,
+                marginLeft: "10px",
+            },
+            {
+                variant: "text",
+                animation: "wave",
+                width: "20%",
+                color: "#2C2E2F",
+                height: 30,
+                marginLeft: "10px",
+            },
+            {
+                variant: "text",
+                animation: "wave",
+                width: "20%",
+                color: "#2C2E2F",
+                height: 30,
+                marginLeft: "10px",
+            },
+        ],
+        body: [
+            {
+                variant: "text",
+                animation: "wave",
+                width: "30%",
+                color: "#2C2E2F",
+                height: 20,
+                marginBottom: "10px",
+            },
+            {
+                variant: "text",
+                animation: "wave",
+                width: "100%",
+                color: "#2C2E2F",
+                height: 20,
+                marginBottom: "10px",
+            },
+            {
+                variant: "text",
+                animation: "wave",
+                width: "100%",
+                color: "#2C2E2F",
+                height: 20,
+                marginBottom: "10px",
+            },
+            {
+                variant: "text",
+                animation: "wave",
+                width: "100%",
+                color: "#2C2E2F",
+                height: 20,
+                marginBottom: "10px",
+            },
+        ],
+    };
     let component = (
         <div className={classes.FullBlog}>
-            <Skeleton
-                variant="text"
-                animation="wave"
-                width="80%"
-                style={{ backgroundColor: "#2C2E2F" }}
-                height={40}
-            />
-            <Skeleton
-                variant="text"
-                animation="wave"
-                width="60%"
-                style={{ backgroundColor: "#2C2E2F" }}
-                height={40}
-            />
+            {skeletons.heading.map((el, i) => (
+                <Skeleton
+                    variant={el.variant}
+                    animation={el.animation}
+                    width={el.width}
+                    style={{ backgroundColor: `${el.color}` }}
+                    height={el.height}
+                    key={i}
+                />
+            ))}
             <div className={classes.Time}>
-                <Skeleton
-                    variant="text"
-                    width="20%"
-                    animation="wave"
-                    height={30}
-                    style={{ backgroundColor: "#2C2E2F" }}
-                />
-                <Skeleton
-                    variant="text"
-                    width="20%"
-                    animation="wave"
-                    height={30}
-                    style={{ marginLeft: "10px", backgroundColor: "#2C2E2F" }}
-                />
-                <Skeleton
-                    variant="text"
-                    width="20%"
-                    animation="wave"
-                    height={30}
-                    style={{ marginLeft: "10px", backgroundColor: "#2C2E2F" }}
-                />
+                {skeletons.time.map((el, i) => (
+                    <Skeleton
+                        variant={el.variant}
+                        width={el.width}
+                        animation={el.animation}
+                        height={el.height}
+                        style={{ backgroundColor: `${el.color}`, marginLeft: `${el.marginLeft}` }}
+                        key={i}
+                    />
+                ))}
             </div>
             <div className={classes.Image}>
                 <div>
@@ -81,31 +139,19 @@ const FullBlog = (props) => {
                 </div>
             </div>
             <div className={classes.Body} style={{ backgroundColor: "#242526" }}>
-                <Skeleton
-                    variant="text"
-                    animation="wave"
-                    width="30%"
-                    height={20}
-                    style={{ backgroundColor: "#2C2E2F", marginBottom: "10px" }}
-                />
-                <Skeleton
-                    variant="text"
-                    animation="wave"
-                    style={{ backgroundColor: "#2C2E2F", marginBottom: "10px" }}
-                    height={20}
-                />
-                <Skeleton
-                    variant="text"
-                    animation="wave"
-                    style={{ backgroundColor: "#2C2E2F", marginBottom: "10px" }}
-                    height={20}
-                />
-                <Skeleton
-                    variant="text"
-                    animation="wave"
-                    style={{ backgroundColor: "#2C2E2F", marginBottom: "10px" }}
-                    height={20}
-                />
+                {skeletons.body.map((el, i) => (
+                    <Skeleton
+                        variant={el.variant}
+                        width={el.width}
+                        animation={el.animation}
+                        height={el.height}
+                        style={{
+                            backgroundColor: `${el.color}`,
+                            marginBottom: `${el.marginBottom}`,
+                        }}
+                        key={i}
+                    />
+                ))}
             </div>
         </div>
     );
@@ -147,7 +193,11 @@ const FullBlog = (props) => {
                             );
                         }
                         if (b.type === "heading") {
-                            return <h3 className={classes.Heading}>{b.body}</h3>;
+                            return (
+                                <h3 className={classes.Heading} key={i}>
+                                    {b.body}
+                                </h3>
+                            );
                         }
                         if (b.type === "link") {
                             return (

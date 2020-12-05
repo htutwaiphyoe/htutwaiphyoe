@@ -7,32 +7,32 @@ import "./App.css";
 
 const Home = React.lazy(() => {
     return new Promise((resolve) => {
-        setTimeout(() => resolve(import("./Home/Home")), 1100);
+        setTimeout(() => resolve(import("./Home/Home")), 1000);
     });
 });
 const Blog = React.lazy(() => {
     return new Promise((resolve) => {
-        setTimeout(() => resolve(import("./Blog/Blog")), 1100);
+        setTimeout(() => resolve(import("./Blog/Blog")), 1000);
     });
 });
 const FullBlog = React.lazy(() => {
     return new Promise((resolve) => {
-        setTimeout(() => resolve(import("./FullBlog/FullBlog")), 1100);
+        setTimeout(() => resolve(import("./FullBlog/FullBlog")), 1000);
     });
 });
 const Contact = React.lazy(() => {
     return new Promise((resolve) => {
-        setTimeout(() => resolve(import("./Contact/Contact")), 1100);
+        setTimeout(() => resolve(import("./Contact/Contact")), 1000);
     });
 });
 const About = React.lazy(() => {
     return new Promise((resolve) => {
-        setTimeout(() => resolve(import("./About/About")), 1100);
+        setTimeout(() => resolve(import("./About/About")), 1000);
     });
 });
 const Portfolio = React.lazy(() => {
     return new Promise((resolve) => {
-        setTimeout(() => resolve(import("./Portfolio/Portfolio")), 1100);
+        setTimeout(() => resolve(import("./Portfolio/Portfolio")), 1000);
     });
 });
 

@@ -1,0 +1,79 @@
+.SkillsSet {
+    padding: 0 2rem;
+}
+.SkillsSet .SkillsSetCircle {
+    position: relative;
+}
+.SkillsSet svg {
+    width: 20rem;
+    height: 20rem;
+
+    fill: none;
+}
+.SkillsSet svg circle {
+    stroke-width: 10;
+    stroke-dasharray: 570;
+}
+.SkillsSet svg circle:first-child {
+    stroke: var(--foreground);
+    /* stroke-dashoffset: 0; */
+}
+.SkillsSet svg circle:last-child {
+    stroke: var(--color-primary);
+    /* stroke-dashoffset: 10; */
+}
+.SkillsSet .SkillsSetIcon {
+    font-size: 2rem;
+}
+.SkillsSet .Percentage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-left: -0.5rem;
+}
+
+.SkillsSetBar {
+    padding: 1rem 3rem;
+    text-align: left;
+}
+.SkillsSetBar h2 {
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+}
+.OutterBar {
+    width: 42rem;
+    height: 1.5rem;
+    border-radius: 10rem;
+    background-color: #fff;
+    position: relative;
+}
+.InnerBar {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 10rem;
+    background-color: var(--color-primary);
+}
+
+@media only screen and (max-width: 992px) {
+    .SkillsSetBar {
+        padding: 1rem 0;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .OutterBar {
+        width: 30rem;
+    }
+
+    .SkillsSet {
+        padding: 0.5rem 2rem;
+    }
+}

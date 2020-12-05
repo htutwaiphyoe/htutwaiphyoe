@@ -1,0 +1,53 @@
+.ProjectsSet {
+    background-color: var(--color-dark-2);
+    width: 100%;
+    border-radius: 0.7rem;
+    -webkit-border-radius: 0.7rem;
+    -moz-border-radius: 0.7rem;
+    -ms-border-radius: 0.7rem;
+    -o-border-radius: 0.7rem;
+    overflow: hidden;
+}
+.ProjectsSet .ProjectsSetImage {
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+    overflow: hidden;
+}
+.ProjectsSet .ProjectsSetImage img {
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+}
+.ProjectsSetText {
+    text-align: left;
+    padding: 2rem 2rem 1rem;
+}
+.ProjectsSetTag {
+    font-size: 1.4rem;
+    color: var(--color-primary);
+    margin-top: -3rem;
+    padding-bottom: 0.5rem;
+}
+.ProjectsSetTitle {
+    font-size: 1.7rem;
+}
+.ProjectsSetActions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 0;
+}
+.ProjectsSetActions a {
+    font-size: 1.5rem;
+
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+
+    border-radius: 10rem;
+    -webkit-border-radius: 10rem;
+    -moz-border-radius: 10rem;
+    -ms-border-radius: 10rem;
+    -o-border-radius: 10rem;
+    color: var(--foreground);
+    background-color: var(--color-primary);
+}

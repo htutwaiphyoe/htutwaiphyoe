@@ -54,45 +54,7 @@
     align-items: center;
     margin-top: 2rem;
 }
-.Portfolio .Skills .SkillsSet {
-    padding: 0 2rem;
-}
-.Portfolio .Skills .SkillsSet .SkillsSetCircle {
-    position: relative;
-}
-.Portfolio .Skills .SkillsSet svg {
-    width: 20rem;
-    height: 20rem;
 
-    fill: none;
-}
-.Portfolio .Skills .SkillsSet svg circle {
-    stroke-width: 10;
-    stroke-dasharray: 570;
-    stroke-dashoffset: 570;
-}
-.Portfolio .Skills .SkillsSet svg circle:first-child {
-    stroke: var(--foreground);
-    stroke-dashoffset: 0;
-}
-.Portfolio .Skills .SkillsSet svg circle:last-child {
-    stroke: var(--color-primary);
-}
-.Portfolio .Skills .SkillsSet .SkillsSetIcon {
-    font-size: 2rem;
-}
-.Portfolio .Skills .SkillsSet .Percentage {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    margin-left: -0.5rem;
-}
 .Portfolio .SkillsSetsBarBox {
     display: flex;
 
@@ -104,30 +66,6 @@
     justify-content: center;
 
     align-items: center;
-}
-
-.Portfolio .Skills .SkillsBar .SkillsSetBar {
-    padding: 1rem 3rem;
-    text-align: left;
-}
-.Portfolio .Skills .SkillsBar .SkillsSetBar h2 {
-    font-size: 2rem;
-    margin-bottom: 0.3rem;
-}
-.Portfolio .Skills .SkillsBar .OutterBar {
-    width: 42rem;
-    height: 1.5rem;
-    border-radius: 10rem;
-    background-color: #fff;
-    position: relative;
-}
-.Portfolio .Skills .SkillsBar .InnerBar {
-    position: absolute;
-    height: 100%;
-    top: 0;
-    left: 0;
-    border-radius: 10rem;
-    background-color: var(--color-primary);
 }
 
 /* Projects */
@@ -142,66 +80,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
-.Projects .ProjectsBox .ProjectsSet {
-    background-color: var(--color-dark-2);
-    width: 100%;
-    border-radius: 0.7rem;
-    -webkit-border-radius: 0.7rem;
-    -moz-border-radius: 0.7rem;
-    -ms-border-radius: 0.7rem;
-    -o-border-radius: 0.7rem;
-    overflow: hidden;
-}
-.Projects .ProjectsBox .ProjectsSet .ProjectsSetImage {
-    width: 100%;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
-    overflow: hidden;
-}
-.Projects .ProjectsBox .ProjectsSet .ProjectsSetImage img {
-    width: 100%;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
-}
-.ProjectsSetText {
-    text-align: left;
-    padding: 2rem 2rem 1rem;
-}
-.ProjectsSetTag {
-    font-size: 1.4rem;
-    color: var(--color-primary);
-    margin-top: -3rem;
-    padding-bottom: 0.5rem;
-}
-.ProjectsSetTitle {
-    font-size: 1.7rem;
-}
-.ProjectsSetActions {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 1rem 0;
-}
-.ProjectsSetActions a {
-    font-size: 1.5rem;
 
-    text-decoration: none;
-    padding: 0.5rem 1.5rem;
-
-    border-radius: 10rem;
-    -webkit-border-radius: 10rem;
-    -moz-border-radius: 10rem;
-    -ms-border-radius: 10rem;
-    -o-border-radius: 10rem;
-}
-.ProjectsSetActions a:first-child {
-    color: var(--foreground);
-    background-color: var(--color-primary);
-}
-.ProjectsSetActions a:last-child {
-    color: var(--color-primary);
-    background-color: transparent;
-    border: 1px solid var(--color-primary);
-}
 @media only screen and (max-width: 1199px) {
     .Portfolio .Projects {
         width: 100%;
@@ -217,9 +96,6 @@
         flex-direction: column;
     }
 
-    .Portfolio .Skills .SkillsBar .SkillsSetBar {
-        padding: 1rem 0;
-    }
     .Statistics {
         width: 90%;
     }
@@ -248,9 +124,7 @@
     .Portfolio .Skills {
         width: 100%;
     }
-    .Portfolio .Skills .SkillsBar .OutterBar {
-        width: 30rem;
-    }
+
     .Statistics .StatisticsBox {
         flex-direction: column;
     }
