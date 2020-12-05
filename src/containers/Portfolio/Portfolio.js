@@ -1,7 +1,19 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import NavigationList from "../../components/NavigationList/NavigationList";
 import classes from "./Portfolio.module.css";
 
+import omnifood from "../../assets/imgs/omnifood.png";
+import natours from "../../assets/imgs/natours.png";
+import nexter from "../../assets/imgs/nexter.png";
+import piggame from "../../assets/imgs/piggame.png";
+import tictactoe from "../../assets/imgs/tictactoe.png";
+import budgety from "../../assets/imgs/budgety.png";
+import forkify from "../../assets/imgs/forkify.png";
+import splashy from "../../assets/imgs/splashy.png";
+import covid from "../../assets/imgs/covid.png";
+import burger from "../../assets/imgs/burger.png";
+import photify from "../../assets/imgs/photify.png";
+import hwp from "../../assets/imgs/hwp.png";
 const skillsSet = {
     db: 63,
     ds: 55,
@@ -17,7 +29,7 @@ const Portfolio = (props) => {
     const [dsPercentage, setdsPercentage] = useState(0);
     const [dpPercentage, setdpPercentage] = useState(0);
     const [gitPercentage, setgitPercentage] = useState(0);
-    const statisticsRef = useRef();
+
     useEffect(() => {
         let timer;
         if (dbPercentage < skillsSet.db) {
@@ -234,7 +246,7 @@ const Portfolio = (props) => {
                         </div>
                     </div>
                 </div>
-                <div className={classes.Statistics} ref={statisticsRef}>
+                <div className={classes.Statistics}>
                     <h1>Status</h1>
                     <div className={classes.StatisticsBox}>
                         <div className={classes.StatisticsItem}>
@@ -261,7 +273,324 @@ const Portfolio = (props) => {
                     <h1>Projects</h1>
                     <div className={classes.ProjectsBox}>
                         <div className={classes.ProjectsSet}>
-                            <div></div>
+                            <div className={classes.ProjectsSetImage}>
+                                <img src={omnifood} alt="Project Prototype" />
+                            </div>
+
+                            <div className={classes.ProjectsSetText}>
+                                <p className={classes.ProjectsSetTag}>#webdesign</p>
+                                <p className={classes.ProjectsSetTitle}>
+                                    Landing page for Omnifood
+                                </p>
+                                <div className={classes.ProjectsSetActions}>
+                                    <a
+                                        href="https://hwpomnifood.netlify.app"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        See in action
+                                    </a>
+                                    <a
+                                        href="https://github.com/htutwaiphyoe/Omnifood"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        See in code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={classes.ProjectsSet}>
+                            <div className={classes.ProjectsSetImage}>
+                                <img src={natours} alt="Project Prototype" />
+                            </div>
+                            <div className={classes.ProjectsSetText}>
+                                <p className={classes.ProjectsSetTag}>#webdesign</p>
+                                <p className={classes.ProjectsSetTitle}>Landing page for Natours</p>
+                                <div className={classes.ProjectsSetActions}>
+                                    <a
+                                        href="https://hwpnatours.netlify.app"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        See in action
+                                    </a>
+                                    <a
+                                        href="https://github.com/htutwaiphyoe/Natours"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        See in code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={classes.ProjectsSet}>
+                            <div className={classes.ProjectsSetImage}>
+                                <img src={nexter} alt="Project Prototype" />
+                            </div>
+
+                            <div className={classes.ProjectsSetText}>
+                                <p className={classes.ProjectsSetTag}>#webdesign</p>
+                                <p className={classes.ProjectsSetTitle}>Landing page for Nexter</p>
+                                <div className={classes.ProjectsSetActions}>
+                                    <a
+                                        href="https://hwpnexter.netlify.app"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        See in action
+                                    </a>
+                                    <a
+                                        href="https://github.com/htutwaiphyoe/Nexter"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        See in code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className={classes.ProjectsBox}>
+                        <div className={classes.ProjectsSet}>
+                            <div className={classes.ProjectsSetImage}>
+                                <img src={piggame} alt="Project Prototype" />
+                            </div>
+
+                            <div className={classes.ProjectsSetText}>
+                                <p className={classes.ProjectsSetTag}>#javascript</p>
+                                <p className={classes.ProjectsSetTitle}>Pig Game</p>
+                                <div className={classes.ProjectsSetActions}>
+                                    <a
+                                        href="https://hwppiggame.netlify.app"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        See in action
+                                    </a>
+                                    <a
+                                        href="https://github.com/htutwaiphyoe/PigGame"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        See in code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={classes.ProjectsSet}>
+                            <div className={classes.ProjectsSetImage}>
+                                <img src={tictactoe} alt="Project Prototype" />
+                            </div>
+                            <div className={classes.ProjectsSetText}>
+                                <p className={classes.ProjectsSetTag}>#javascript</p>
+                                <p className={classes.ProjectsSetTitle}>TicTacToe Game</p>
+                                <div className={classes.ProjectsSetActions}>
+                                    <a
+                                        href="https://hwptictactoe.netlify.app"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        See in action
+                                    </a>
+                                    <a
+                                        href="https://github.com/htutwaiphyoe/TicTacToe"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        See in code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={classes.ProjectsSet}>
+                            <div className={classes.ProjectsSetImage}>
+                                <img src={budgety} alt="Project Prototype" />
+                            </div>
+
+                            <div className={classes.ProjectsSetText}>
+                                <p className={classes.ProjectsSetTag}>#javascript</p>
+                                <p className={classes.ProjectsSetTitle}>Budget Management App</p>
+                                <div className={classes.ProjectsSetActions}>
+                                    <a
+                                        href="https://hwpbudgety.netlify.app"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        See in action
+                                    </a>
+                                    <a
+                                        href="https://github.com/htutwaiphyoe/Budgety"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        See in code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className={classes.ProjectsBox}>
+                        <div className={classes.ProjectsSet}>
+                            <div className={classes.ProjectsSetImage}>
+                                <img src={forkify} alt="Project Prototype" />
+                            </div>
+
+                            <div className={classes.ProjectsSetText}>
+                                <p className={classes.ProjectsSetTag}>#javascript</p>
+                                <p className={classes.ProjectsSetTitle}>Forkify</p>
+                                <div className={classes.ProjectsSetActions}>
+                                    <a
+                                        href="https://hwpforkify.netlify.app"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        See in action
+                                    </a>
+                                    <a
+                                        href="https://github.com/htutwaiphyoe/Forkify"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        See in code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={classes.ProjectsSet}>
+                            <div className={classes.ProjectsSetImage}>
+                                <img src={splashy} alt="Project Prototype" />
+                            </div>
+                            <div className={classes.ProjectsSetText}>
+                                <p className={classes.ProjectsSetTag}>#javascript</p>
+                                <p className={classes.ProjectsSetTitle}>Splashy - Unplash Clone</p>
+                                <div className={classes.ProjectsSetActions}>
+                                    <a
+                                        href="https://hwpsplashy.netlify.app"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        See in action
+                                    </a>
+                                    <a
+                                        href="https://github.com/htutwaiphyoe/Splashy"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        See in code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={classes.ProjectsSet}>
+                            <div className={classes.ProjectsSetImage}>
+                                <img src={covid} alt="Project Prototype" />
+                            </div>
+
+                            <div className={classes.ProjectsSetText}>
+                                <p className={classes.ProjectsSetTag}>#javascript</p>
+                                <p className={classes.ProjectsSetTitle}>Covid19 Tracker</p>
+                                <div className={classes.ProjectsSetActions}>
+                                    <a
+                                        href="https://covid19trackersite.netlify.app"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        See in action
+                                    </a>
+                                    <a
+                                        href="https://github.com/htutwaiphyoe/Covid19Tracker"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        See in code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className={classes.ProjectsBox}>
+                        <div className={classes.ProjectsSet}>
+                            <div className={classes.ProjectsSetImage}>
+                                <img src={burger} alt="Project Prototype" />
+                            </div>
+
+                            <div className={classes.ProjectsSetText}>
+                                <p className={classes.ProjectsSetTag}>#react</p>
+                                <p className={classes.ProjectsSetTitle}>BurgerBuilder</p>
+                                <div className={classes.ProjectsSetActions}>
+                                    <a
+                                        href="https://burgerbuilder-413b0.web.app"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        See in action
+                                    </a>
+                                    <a
+                                        href="https://github.com/htutwaiphyoe/BurgerBuilder-ReactRedux"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        See in code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={classes.ProjectsSet}>
+                            <div className={classes.ProjectsSetImage}>
+                                <img src={photify} alt="Project Prototype" />
+                            </div>
+                            <div className={classes.ProjectsSetText}>
+                                <p className={classes.ProjectsSetTag}>#react</p>
+                                <p className={classes.ProjectsSetTitle}>
+                                    Photify - Dynamic Grid Photoes
+                                </p>
+                                <div className={classes.ProjectsSetActions}>
+                                    <a
+                                        href="https://photify.web.app"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        See in action
+                                    </a>
+                                    <a
+                                        href="https://github.com/htutwaiphyoe/Photify"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        See in code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={classes.ProjectsSet}>
+                            <div className={classes.ProjectsSetImage}>
+                                <img src={hwp} alt="Project Prototype" />
+                            </div>
+
+                            <div className={classes.ProjectsSetText}>
+                                <p className={classes.ProjectsSetTag}>#react</p>
+                                <p className={classes.ProjectsSetTitle}>
+                                    Htut Wai Phyoe - Portfolio
+                                </p>
+                                <div className={classes.ProjectsSetActions}>
+                                    <a
+                                        href="https://covid19trackersite.netlify.app"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        See in action
+                                    </a>
+                                    <a
+                                        href="https://github.com/htutwaiphyoe/htutwaiphyoe"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        See in code
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

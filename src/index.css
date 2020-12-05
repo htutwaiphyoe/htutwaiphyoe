@@ -30,12 +30,14 @@ body {
     -moz-transition: background-color 0.2s ease-in;
     -ms-transition: background-color 0.2s ease-in;
     -o-transition: background-color 0.2s ease-in;
-
 }
 select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+}
+::selection {
+    background-color: var(--color-primary);
 }
 /* To prevent blowing up font size in landscape mode */
 @media only screen and (orientation: landscape) {

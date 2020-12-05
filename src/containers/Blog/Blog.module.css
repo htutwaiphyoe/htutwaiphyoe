@@ -31,7 +31,7 @@
 }
 .Blog .BlogItem .ItemImage {
     width: 100%;
-    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%); */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
 }
 .Blog .BlogItem .ItemImage img {
     width: 100%;
