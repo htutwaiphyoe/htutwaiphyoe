@@ -147,7 +147,6 @@ const Contact = (props) => {
         for (let key in updatedContactForm) {
             valid = updatedContactForm[key].valid && valid;
         }
-        console.log(valid);
         setContactForm(updatedContactForm);
         setContactFormValid(valid);
     };

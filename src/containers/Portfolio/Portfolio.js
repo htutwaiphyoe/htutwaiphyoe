@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import NavigationList from "../../components/NavigationList/NavigationList";
 import SkillSet from "../../components/SkillSet/SkillSet";
 import ProjectSet from "../../components/ProjectSet/ProjectSet";
@@ -23,6 +23,9 @@ const statistics = [
     { icon: "time-sharp", amount: "1", text: "years of coding" },
 ];
 const Portfolio = (props) => {
+    useEffect(() => {
+        window.scrollTo({ top: 0 });
+    });
     return (
         <React.Fragment>
             <NavigationList transparent={false} />
@@ -143,7 +146,7 @@ const Portfolio = (props) => {
                             image={hwp}
                             tag={"react"}
                             content={"Htut Wai Phyoe - Portfolio"}
-                            link={"https://covid19trackersite.netlify.app"}
+                            link={"https://htutwaiphyoe.netlify.app/"}
                         />
                     </div>
                 </div>

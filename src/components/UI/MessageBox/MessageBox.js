@@ -5,7 +5,6 @@ import NavigationList from "../../NavigationList/NavigationList";
 import classes from "./MessageBox.module.css";
 const MessageBox = (props) => {
     let components = null;
-    console.log(props);
     if (props.message === "Network Error") {
         components = (
             <React.Fragment>

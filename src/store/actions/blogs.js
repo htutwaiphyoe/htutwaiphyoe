@@ -30,7 +30,6 @@ export const fetchBlogs = () => async (dispatch) => {
         }
         dispatch(loadBlogs(data));
     } catch (e) {
-        console.log(e);
         dispatch(showError(e));
     }
 };
@@ -39,7 +38,6 @@ export const fetchBlog = (id) => async (dispatch) => {
     try {
         const response = await htutwaiphyoe.get(`/blogs/${id}.json`);
         dispatch(loadFullBlog(response.data));
-        console.log(response.data);
     } catch (e) {
         dispatch(showError(e));
     }
