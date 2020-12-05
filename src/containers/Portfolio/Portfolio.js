@@ -264,7 +264,7 @@ const Portfolio = (props) => {
                         <div className={classes.StatisticsItem}>
                             <ion-icon name="time-sharp"></ion-icon>
                             <p>
-                                <span>1+ </span>years of experience
+                                <span>1+ </span>years of coding
                             </p>
                         </div>
                     </div>
@@ -351,8 +351,6 @@ const Portfolio = (props) => {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div className={classes.ProjectsBox}>
                         <div className={classes.ProjectsSet}>
                             <div className={classes.ProjectsSetImage}>
                                 <img src={piggame} alt="Project Prototype" />
@@ -430,8 +428,6 @@ const Portfolio = (props) => {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div className={classes.ProjectsBox}>
                         <div className={classes.ProjectsSet}>
                             <div className={classes.ProjectsSetImage}>
                                 <img src={forkify} alt="Project Prototype" />
@@ -509,8 +505,6 @@ const Portfolio = (props) => {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div className={classes.ProjectsBox}>
                         <div className={classes.ProjectsSet}>
                             <div className={classes.ProjectsSetImage}>
                                 <img src={burger} alt="Project Prototype" />
