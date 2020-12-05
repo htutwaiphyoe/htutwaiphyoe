@@ -30,7 +30,7 @@ body {
     -moz-transition: background-color 0.2s ease-in;
     -ms-transition: background-color 0.2s ease-in;
     -o-transition: background-color 0.2s ease-in;
-    overflow: hidden;
+
 }
 select {
     -webkit-appearance: none;

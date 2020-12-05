@@ -4,48 +4,37 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Layout from "./Layout/Layout";
 import Loader from "../components/UI/Loader/Loader";
 import "./App.css";
-// const Home = React.lazy(() => {
-//     return Promise.all([
-//         import("./Home/Home"),
-//         new Promise((resolve) => setTimeout(resolve, 1000)),
-//     ]).then(([moduleExports]) => moduleExports);
-// });
+
 const Home = React.lazy(() => {
     return new Promise((resolve) => {
-        setTimeout(() => resolve(import("./Home/Home")), 1500);
+        setTimeout(() => resolve(import("./Home/Home")), 1100);
     });
 });
 const Blog = React.lazy(() => {
     return new Promise((resolve) => {
-        setTimeout(() => resolve(import("./Blog/Blog")), 1500);
+        setTimeout(() => resolve(import("./Blog/Blog")), 1100);
     });
 });
 const FullBlog = React.lazy(() => {
     return new Promise((resolve) => {
-        setTimeout(() => resolve(import("./FullBlog/FullBlog")), 1500);
+        setTimeout(() => resolve(import("./FullBlog/FullBlog")), 1100);
     });
 });
 const Contact = React.lazy(() => {
     return new Promise((resolve) => {
-        setTimeout(() => resolve(import("./Contact/Contact")), 1500);
+        setTimeout(() => resolve(import("./Contact/Contact")), 1100);
     });
 });
 const About = React.lazy(() => {
     return new Promise((resolve) => {
-        setTimeout(() => resolve(import("./About/About")), 1500);
+        setTimeout(() => resolve(import("./About/About")), 1100);
     });
 });
 const Portfolio = React.lazy(() => {
     return new Promise((resolve) => {
-        setTimeout(() => resolve(import("./Portfolio/Portfolio")), 1500);
+        setTimeout(() => resolve(import("./Portfolio/Portfolio")), 1100);
     });
 });
-// const Home = React.lazy(() => import("./Home/Home"));
-// const Blog = React.lazy(() => import("./Blog/Blog"));
-// const FullBlog = React.lazy(() => import("./FullBlog/FullBlog"));
-// const Contact = React.lazy(() => import("./Contact/Contact"));
-// const About = React.lazy(() => import("./About/About"));
-// const Portfolio = React.lazy(() => import("./Portfolio/Portfolio"));
 
 const App = (props) => {
     return (

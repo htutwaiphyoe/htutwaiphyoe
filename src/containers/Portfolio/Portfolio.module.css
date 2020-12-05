@@ -1,0 +1,91 @@
+.Portfolio {
+    width: 100%;
+    padding-top: 2rem;
+}
+.Portfolio h1 {
+    font-size: 4rem;
+}
+.Statistics {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.Statistics .StatisticsBox {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Statistics .StatisticsBox .StatisticsItem {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Statistics .StatisticsBox .StatisticsItem ion-icon {
+    font-size: 6.4rem;
+}
+.Statistics .StatisticsBox .StatisticsItem p {
+    font-size: 2rem;
+}
+.Statistics .StatisticsBox .StatisticsItem span {
+    color: var(--color-primary);
+    font-weight: 900;
+}
+.Portfolio .Skills {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.Portfolio .Skills .SkillsBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Portfolio .SkillsSetsBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+.Portfolio .Skills .SkillsSet {
+    padding: 0 3rem;
+}
+.Portfolio .Skills .SkillsSet .SkillsSetCircle {
+    position: relative;
+}
+.Portfolio .Skills .SkillsSet svg {
+    width: 20rem;
+    height: 20rem;
+
+    fill: none;
+}
+.Portfolio .Skills .SkillsSet svg circle {
+    stroke-width: 10;
+    stroke-dasharray: 570;
+    stroke-dashoffset: 570;
+}
+.Portfolio .Skills .SkillsSet svg circle:first-child {
+    stroke: var(--foreground);
+    stroke-dashoffset: 0;
+}
+.Portfolio .Skills .SkillsSet svg circle:last-child {
+    stroke: var(--color-primary);
+}
+.Portfolio .Skills .SkillsSet .SkillsSetIcon {
+    font-size: 2rem;
+}
+.Portfolio .Skills .SkillsSet .Percentage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-left: -0.5rem;
+}
