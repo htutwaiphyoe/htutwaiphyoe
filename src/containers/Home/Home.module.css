@@ -17,6 +17,7 @@
 }
 .Home h2 {
     font-size: 3rem;
+
     font-weight: 400;
     letter-spacing: 2rem;
     font-family: "Poppins", sans-serif;
@@ -29,6 +30,7 @@
     font-weight: 600;
     letter-spacing: 3rem;
     font-family: "Poppins", sans-serif;
+    font-family: "Roboto Slab", serif;
     animation: fadeInh1 0.5s linear;
     -webkit-animation: fadeInh1 0.5s linear;
 }

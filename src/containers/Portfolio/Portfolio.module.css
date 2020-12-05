@@ -1,13 +1,15 @@
 .Portfolio {
     width: 100%;
-    padding-top: 2rem;
+    padding: 2rem 0;
+    text-align: center;
 }
 .Portfolio h1 {
     font-size: 4rem;
+    font-family: "Roboto Slab", serif;
 }
 .Statistics {
     width: 80%;
-    margin: 0 auto;
+    margin: 5rem auto 0;
     text-align: center;
 }
 .Statistics .StatisticsBox {
@@ -36,7 +38,7 @@
 }
 .Portfolio .Skills {
     text-align: center;
-    margin-top: 5rem;
+    margin-top: 0.5rem;
 }
 
 .Portfolio .Skills .SkillsBox {
@@ -48,7 +50,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 .Portfolio .Skills .SkillsSet {
     padding: 0 3rem;
@@ -88,4 +90,45 @@
     align-items: center;
     font-size: 2rem;
     margin-left: -0.5rem;
+}
+.Portfolio .SkillsSetsBarBox {
+    display: flex;
+
+    flex-direction: column;
+    margin-top: 4rem;
+}
+.Portfolio .Skills .SkillsBar {
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+}
+
+.Portfolio .Skills .SkillsBar .SkillsSetBar {
+    padding: 1rem 3rem;
+    text-align: left;
+}
+.Portfolio .Skills .SkillsBar .SkillsSetBar h2 {
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+}
+.Portfolio .Skills .SkillsBar .OutterBar {
+    width: 45rem;
+    height: 1.5rem;
+    border-radius: 10rem;
+    background-color: #fff;
+    position: relative;
+}
+.Portfolio .Skills .SkillsBar .InnerBar {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 10rem;
+    background-color: var(--color-primary);
+}
+
+/* Projects */
+.Portfolio .Projects {
+    margin-top: 5rem;
 }
