@@ -104,7 +104,7 @@ const FullBlog = (props) => {
         ],
     };
     let component = (
-        <div className={classes.FullBlog}>
+        <section className={classes.FullBlog}>
             {skeletons.heading.map((el, i) => (
                 <Skeleton
                     variant={el.variant}
@@ -153,14 +153,14 @@ const FullBlog = (props) => {
                     />
                 ))}
             </div>
-        </div>
+        </section>
     );
     if (error) {
         return <MessageBox message={error.message} />;
     }
     if (fullBlog) {
         component = (
-            <div className={classes.FullBlog}>
+            <section className={classes.FullBlog}>
                 <h2>{fullBlog.title}</h2>
                 <div className={classes.Time}>
                     <p>#{fullBlog.topic}</p>
@@ -225,7 +225,7 @@ const FullBlog = (props) => {
                         );
                     })}
                 </div>
-            </div>
+            </section>
         );
     }
     return (

@@ -7,7 +7,7 @@ const About = (props) => {
     return (
         <React.Fragment>
             <NavigationList />
-            <div className={classes.About}>
+            <section className={classes.About}>
                 <div className={classes.Intro}>
                     <div className={classes.IntroImg}>
                         <img src={img} alt="About" />
@@ -24,7 +24,7 @@ const About = (props) => {
                         </p>
                     </div>
                 </div>
-            </div>
+            </section>
         </React.Fragment>
     );
 };

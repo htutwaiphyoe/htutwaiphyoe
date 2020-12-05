@@ -103,7 +103,7 @@ const Blog = (props) => {
     return (
         <React.Fragment>
             <NavigationList />
-            <div className={classes.Blog}>{components}</div>
+            <section className={classes.Blog}>{components}</section>
         </React.Fragment>
     );
 };

@@ -29,7 +29,7 @@ const Portfolio = (props) => {
     return (
         <React.Fragment>
             <NavigationList transparent={false} />
-            <div className={classes.Portfolio}>
+            <section className={classes.Portfolio}>
                 <div className={classes.Skills}>
                     <h1>Skill Sets</h1>
                     <div className={classes.SkillsBox}>
@@ -150,7 +150,7 @@ const Portfolio = (props) => {
                         />
                     </div>
                 </div>
-            </div>
+            </section>
         </React.Fragment>
     );
 };

@@ -4,7 +4,6 @@ import React from "react";
 const Layout = (props) => {
     return (
         <React.Fragment>
-            {/* <NavigationList /> */}
             <main>{props.children}</main>
         </React.Fragment>
     );

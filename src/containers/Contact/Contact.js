@@ -186,7 +186,7 @@ const Contact = (props) => {
     return (
         <React.Fragment>
             <NavigationList />
-            <div className={classes.Contact}>
+            <section className={classes.Contact}>
                 <div className={classes.Info}>
                     <div className={classes.InfoBox}>
                         <h2>Contact information</h2>
@@ -209,7 +209,7 @@ const Contact = (props) => {
                         {loading ? "I'd love your message" : "Send it to me"}
                     </Button>
                 </form>
-            </div>
+            </section>
         </React.Fragment>
     );
 };
