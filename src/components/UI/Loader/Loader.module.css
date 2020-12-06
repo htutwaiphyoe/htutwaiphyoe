@@ -2,8 +2,8 @@
     width: 100%;
     height: 100vh;
     background-color: var(--color-primary);
-    animation: loader 1.7s ease;
-    -webkit-animation: loader 1.7s ease;
+    animation: loader 1.7s ease infinite;
+    -webkit-animation: loader 1.7s ease infinite;
     overflow: hidden;
 }
 
