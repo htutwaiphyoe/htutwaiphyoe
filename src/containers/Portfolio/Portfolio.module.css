@@ -5,7 +5,9 @@
 }
 .Portfolio h1 {
     font-size: 4rem;
-    font-family: "Roboto Slab", serif;
+    /* font-family: "Roboto Slab", serif; */
+    font-family: "Fredoka One", cursive;
+    letter-spacing: 0.3rem;
 }
 .Statistics {
     width: 80%;

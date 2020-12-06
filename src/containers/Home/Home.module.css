@@ -20,7 +20,7 @@
 
     font-weight: 400;
     letter-spacing: 2rem;
-    font-family: "Poppins", sans-serif;
+    font-family: "Fredoka One", cursive;
     animation: fadeInh2 0.5s linear;
     -webkit-animation: fadeInh2 0.5s linear;
     margin-bottom: 2rem;
@@ -29,8 +29,9 @@
     font-size: 7rem;
     font-weight: 600;
     letter-spacing: 3rem;
-    font-family: "Poppins", sans-serif;
-    font-family: "Roboto Slab", serif;
+    font-family: "Fredoka One", cursive;
+    /* font-family: "Poppins", sans-serif;
+    font-family: "Roboto Slab", serif; */
     animation: fadeInh1 0.5s linear;
     -webkit-animation: fadeInh1 0.5s linear;
 }
