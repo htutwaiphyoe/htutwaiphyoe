@@ -32,5 +32,6 @@ I'm currently a 20 years old university student studying **Computer Engineering 
 [<img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" />]()
 [<img src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white" />]()
 
+![Here's my github stats](https://github-readme-stats.vercel.app/api?username=htutwaiphyoe)<br>
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=htutwaiphyoe&layout=compact&hide=python)](https://github.com/htutwaiphyoe/github-readme-stats)
-![Here's my github stats](https://github-readme-stats.vercel.app/api?username=htutwaiphyoe)
+
