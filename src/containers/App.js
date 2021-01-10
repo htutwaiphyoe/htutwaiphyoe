@@ -2,7 +2,6 @@ import React, { Suspense } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import Layout from "./Layout/Layout";
-// import Loader from "../components/UI/Loader/Loader";
 import "./App.css";
 
 const Home = React.lazy(() => {
@@ -50,11 +49,11 @@ const App = (props) => {
                     <Switch>
                         <Route path="/" exact component={Home} />
                         <Route path="/blogs" exact component={Blog} />
-                        <Route path="/blogs/:id" exact component={FullBlog} />
+                        <Route path="/blogs/:slug" exact component={FullBlog} />
                         <Route path="/about" exact component={About} />
                         <Route path="/contact" exact component={Contact} />
                         <Route path="/portfolio" exact component={Portfolio} />
-                        <Route render={() => <MessageBox message="404" />} />
+                        <Route render={() => <MessageBox message="404 Page not found ⚠" />} />
                     </Switch>
                 </Suspense>
             </Layout>

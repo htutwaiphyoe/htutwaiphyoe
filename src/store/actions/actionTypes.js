@@ -10,3 +10,4 @@ export const SUBMIT_FORM = "SUBMIT_FORM";
 export const SEND_REQUEST = "SEND_REQUEST";
 export const SHOW_TOAST = "SHOW_TOAST";
 export const SHOW_ERROR = "SHOW_ERROR";
+export const CLEAR_ERROR = "CLEAR_ERROR";

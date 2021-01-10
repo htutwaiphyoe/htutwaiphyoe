@@ -7,7 +7,7 @@
     flex-direction: column;
 }
 .MessageBox p {
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 .MessageBox a {
     color: var(--color-primary);

@@ -27,16 +27,16 @@ export const fetchBlogs = () => async (dispatch) => {
         // console.log(response);
         dispatch(loadBlogs(response.data.data.data));
     } catch (e) {
-        dispatch(showError(e));
+        dispatch(showError(e.response.data));
     }
 };
 
-export const fetchBlog = (id) => async (dispatch) => {
+export const fetchBlog = (slug) => async (dispatch) => {
     try {
-        const response = await htutwaiphyoe.get(`api/blogs/${id}`);
+        const response = await htutwaiphyoe.get(`api/blogs/${slug}`);
         // console.log(response);
         dispatch(loadFullBlog(response.data.data.data));
     } catch (e) {
-        dispatch(showError(e));
+        dispatch(showError(e.response.data));
     }
 };

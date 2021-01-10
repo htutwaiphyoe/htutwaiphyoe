@@ -15,13 +15,16 @@ const FullBlog = (props) => {
 
     useEffect(() => {
         window.scrollTo({ top: 0 });
-    });
+        return () => {
+            dispatch(actionCreators.clearError());
+        };
+    }, [dispatch]);
 
     useEffect(() => {
         if (blogs.length === 0) {
-            dispatch(actionCreators.fetchBlog(props.match.params.id));
+            dispatch(actionCreators.fetchBlog(props.match.params.slug));
         } else {
-            const blog = blogs.find((b) => b.id === props.match.params.id);
+            const blog = blogs.find((b) => b.slug === props.match.params.slug);
             if (blog) {
                 dispatch(actionCreators.loadFullBlog(blog));
             }
@@ -29,7 +32,7 @@ const FullBlog = (props) => {
         return () => {
             dispatch(actionCreators.clearFullBlog());
         };
-    }, [props.match.params.id, dispatch, blogs]);
+    }, [props.match.params.slug, dispatch, blogs]);
     let skeletons = {
         heading: [
             { variant: "text", animation: "wave", width: "80%", color: "#2C2E2F", height: 40 },

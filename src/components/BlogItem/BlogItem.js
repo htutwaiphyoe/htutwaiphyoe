@@ -5,14 +5,14 @@ import { beautifyDate } from "../../utils/utils";
 import classes from "./BlogItem.module.css";
 const BlogItem = (props) => {
     const history = useHistory();
-    const onClickHandler = (id) => {
-        history.push(`/blogs/${id}`);
+    const onClickHandler = (slug) => {
+        history.push(`/blogs/${slug}`);
     };
     return (
         <div
             className={classes.BlogItem}
             key={props.blog.id}
-            onClick={onClickHandler.bind(this, props.blog.id)}
+            onClick={onClickHandler.bind(this, props.blog.slug)}
         >
             <div className={classes.ItemImage}>
                 <img src={`${props.blog.imageCover}`} alt={`${props.blog.title}`} />

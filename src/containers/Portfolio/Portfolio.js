@@ -25,7 +25,7 @@ const statistics = [
 const Portfolio = (props) => {
     useEffect(() => {
         window.scrollTo({ top: 0 });
-    });
+    }, []);
     return (
         <React.Fragment>
             <NavigationList transparent={false} />

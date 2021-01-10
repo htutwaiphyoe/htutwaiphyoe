@@ -13,3 +13,9 @@ export const showError = (payload) => {
         payload,
     };
 };
+
+export const clearError = (payload) => {
+    return {
+        type: actionTypes.CLEAR_ERROR,
+    };
+};

@@ -15,7 +15,11 @@ const Blog = (props) => {
 
     useEffect(() => {
         window.scrollTo({ top: 0 });
-    });
+        return () => {
+            dispatch(actionCreators.clearError());
+        };
+    }, [dispatch]);
+    
     useEffect(() => {
         if (blogs.length === 0) {
             dispatch(actionCreators.fetchBlogs());
