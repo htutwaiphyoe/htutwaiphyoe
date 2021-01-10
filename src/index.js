@@ -9,9 +9,10 @@ import "./index.css";
 import App from "./containers/App";
 import reportWebVitals from "./reportWebVitals";
 
-const composeEnhancers = process.env.NODE_ENV === "development"
+const composeEnhancers =
+    process.env.NODE_ENV === "development"
         ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
-        : compose;;
+        : compose;
 const store = createStore(rootReducers, composeEnhancers(applyMiddleware(thunk)));
 // const store = createStore(rootReducers, applyMiddleware(thunk));
 ReactDOM.render(

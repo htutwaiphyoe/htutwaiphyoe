@@ -23,12 +23,14 @@ export const clearFullBlog = () => {
 };
 export const fetchBlogs = () => async (dispatch) => {
     try {
-        const response = await htutwaiphyoe.get("/blogs.json");
-        let data = [];
-        for (let i in response.data) {
-            data.unshift({ id: i, ...response.data[i] });
-        }
-        dispatch(loadBlogs(data));
+        const response = await htutwaiphyoe.get("/api/blogs");
+        // let data = [];
+        // for (let i in response.data) {
+        //     data.unshift({ id: i, ...response.data[i] });
+        // }
+        // dispatch(loadBlogs(data));
+        console.log(response.data.data.blogs);
+        dispatch(loadBlogs(response.data.data.blogs));
     } catch (e) {
         dispatch(showError(e));
     }

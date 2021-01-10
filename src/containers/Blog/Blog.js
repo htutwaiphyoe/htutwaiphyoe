@@ -6,6 +6,7 @@ import { useSelector, useDispatch } from "react-redux";
 import NavigationList from "../../components/NavigationList/NavigationList";
 import * as actionCreators from "../../store/actions";
 import MessageBox from "../../components/UI/MessageBox/MessageBox";
+import BlogItem from "../../components/BlogItem/BlogItem";
 import classes from "./Blog.module.css";
 const Blog = (props) => {
     const blogs = useSelector((state) => state.blogs.blogs);
@@ -20,9 +21,6 @@ const Blog = (props) => {
             dispatch(actionCreators.fetchBlogs());
         }
     }, [blogs.length, dispatch]);
-    const onClickHandler = (id) => {
-        props.history.push(`/blogs/${id}`);
-    };
 
     let components = [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }, { id: 5 }, { id: 6 }].map(
         (blog) => (
@@ -77,27 +75,7 @@ const Blog = (props) => {
         return <MessageBox message={error.message} />;
     }
     if (blogs.length > 0) {
-        components = blogs.map((blog) => (
-            <div
-                className={classes.BlogItem}
-                key={blog.id}
-                onClick={onClickHandler.bind(this, blog.id)}
-            >
-                <div className={classes.ItemImage}>
-                    <img src={`${blog.coverImageURL}`} alt={`${blog.title}`} />
-                </div>
-
-                <div className={classes.ItemText}>
-                    <p className={classes.tag}>#{blog.topic}</p>
-                    <div className={classes.time}>
-                        <p>{blog.date}</p>
-                        <p>{blog.duration} mins to read</p>
-                    </div>
-
-                    <p>{blog.title}</p>
-                </div>
-            </div>
-        ));
+        components = blogs.map((blog) => <BlogItem blog={blog} key={blog.id} />);
     }
 
     return (
