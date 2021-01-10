@@ -163,9 +163,9 @@ const FullBlog = (props) => {
             <section className={classes.FullBlog}>
                 <h2>{fullBlog.title}</h2>
                 <div className={classes.Time}>
-                    <p>#{fullBlog.topic}</p>
-                    <p>{fullBlog.date}</p>
-                    <p>{fullBlog.duration} mins to read</p>
+                    <p>#{fullBlog.tag}</p>
+                    <p>{fullBlog.createdAt}</p>
+                    <p>{fullBlog.readTime} mins to read</p>
                 </div>
                 <div className={classes.Image}>
                     <div
@@ -175,7 +175,7 @@ const FullBlog = (props) => {
                     //     backgroundPosition: "center center",
                     // }}
                     >
-                        <img src={fullBlog.coverImageURL} alt={fullBlog.title} />
+                        <img src={fullBlog.imageCover} alt={fullBlog.title} />
                     </div>
                 </div>
                 <div className={classes.Body}>
