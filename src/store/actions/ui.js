@@ -19,3 +19,16 @@ export const clearError = (payload) => {
         type: actionTypes.CLEAR_ERROR,
     };
 };
+
+export const incrementPage = () => {
+    return {
+        type: actionTypes.INCREMENT_PAGE,
+    };
+};
+
+export const disableRequest = (payload) => {
+    return {
+        type: actionTypes.DISABLE_REQUEST,
+        payload,
+    };
+};

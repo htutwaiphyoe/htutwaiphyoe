@@ -11,3 +11,5 @@ export const SEND_REQUEST = "SEND_REQUEST";
 export const SHOW_TOAST = "SHOW_TOAST";
 export const SHOW_ERROR = "SHOW_ERROR";
 export const CLEAR_ERROR = "CLEAR_ERROR";
+export const INCREMENT_PAGE = "INCREMENT_PAGE";
+export const DISABLE_REQUEST = "DISABLE_REQUEST";

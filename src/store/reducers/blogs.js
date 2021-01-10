@@ -6,7 +6,9 @@ const initialState = {
 };
 
 const loadBlogs = (state, action) => {
-    return updateObject(state, { blogs: action.payload });
+    const blogs = [...state.blogs, ...action.payload];
+
+    return updateObject(state, { blogs });
 };
 const loadFullBlog = (state, action) => {
     return updateObject(state, { fullBlog: action.payload });
