@@ -5,6 +5,7 @@ import { useSelector, useDispatch } from "react-redux";
 import NavigationList from "../../components/NavigationList/NavigationList";
 import * as actionCreators from "../../store/actions";
 import MessageBox from "../../components/UI/MessageBox/MessageBox";
+import { beautifyDate } from "../../utils/utils";
 import classes from "./FullBlog.module.css";
 const FullBlog = (props) => {
     const fullBlog = useSelector((state) => state.blogs.fullBlog);
@@ -128,15 +129,13 @@ const FullBlog = (props) => {
                 ))}
             </div>
             <div className={classes.Image}>
-                <div>
-                    <Skeleton
-                        variant="rect"
-                        width="100%"
-                        height={500}
-                        animation="wave"
-                        style={{ backgroundColor: "#2C2E2F" }}
-                    />
-                </div>
+                <Skeleton
+                    variant="rect"
+                    width="100%"
+                    height={500}
+                    animation="wave"
+                    style={{ backgroundColor: "#2C2E2F" }}
+                />
             </div>
             <div className={classes.Body} style={{ backgroundColor: "#242526" }}>
                 {skeletons.body.map((el, i) => (
@@ -164,7 +163,7 @@ const FullBlog = (props) => {
                 <h2>{fullBlog.title}</h2>
                 <div className={classes.Time}>
                     <p>#{fullBlog.tag}</p>
-                    <p>{fullBlog.createdAt}</p>
+                    <p>{beautifyDate(fullBlog.createdAt)}</p>
                     <p>{fullBlog.readTime} mins to read</p>
                 </div>
                 <div className={classes.Image}>

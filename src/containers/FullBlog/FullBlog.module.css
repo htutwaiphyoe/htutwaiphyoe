@@ -26,12 +26,11 @@
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
     overflow: hidden;
-    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%); */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
 }
 
 .FullBlog .Image img {
     width: 100%;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
     opacity: 1;
 }
 .FullBlog .Body {

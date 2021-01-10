@@ -24,13 +24,8 @@ export const clearFullBlog = () => {
 export const fetchBlogs = () => async (dispatch) => {
     try {
         const response = await htutwaiphyoe.get("/api/blogs");
-        // let data = [];
-        // for (let i in response.data) {
-        //     data.unshift({ id: i, ...response.data[i] });
-        // }
-        // dispatch(loadBlogs(data));
-        console.log(response.data.data.blogs);
-        dispatch(loadBlogs(response.data.data.blogs));
+        // console.log(response);
+        dispatch(loadBlogs(response.data.data.data));
     } catch (e) {
         dispatch(showError(e));
     }
@@ -38,8 +33,9 @@ export const fetchBlogs = () => async (dispatch) => {
 
 export const fetchBlog = (id) => async (dispatch) => {
     try {
-        const response = await htutwaiphyoe.get(`/blogs/${id}.json`);
-        dispatch(loadFullBlog(response.data));
+        const response = await htutwaiphyoe.get(`api/blogs/${id}`);
+        // console.log(response);
+        dispatch(loadFullBlog(response.data.data.data));
     } catch (e) {
         dispatch(showError(e));
     }

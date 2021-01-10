@@ -1,15 +1,9 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 
+import { beautifyDate } from "../../utils/utils";
 import classes from "./BlogItem.module.css";
 const BlogItem = (props) => {
-    let { createdAt } = props.blog;
-    createdAt = new Date(createdAt).toLocaleString("en-us", {
-        day: "numeric",
-        month: "long",
-        year: "numeric",
-    });
-
     const history = useHistory();
     const onClickHandler = (id) => {
         history.push(`/blogs/${id}`);
@@ -27,7 +21,7 @@ const BlogItem = (props) => {
             <div className={classes.ItemText}>
                 <p className={classes.tag}>#{props.blog.tag}</p>
                 <div className={classes.time}>
-                    <p>{createdAt}</p>
+                    <p>{beautifyDate(props.blog.createdAt)}</p>
                     <p>{props.blog.readTime} mins to read</p>
                 </div>
 

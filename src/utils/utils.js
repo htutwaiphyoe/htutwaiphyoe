@@ -29,3 +29,10 @@ export const checkValidations = (value, validations) => {
     }
     return valid;
 };
+
+export const beautifyDate = (date) =>
+    new Date(date).toLocaleString("en-us", {
+        day: "numeric",
+        month: "long",
+        year: "numeric",
+    });
