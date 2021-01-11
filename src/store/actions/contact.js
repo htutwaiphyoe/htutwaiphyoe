@@ -4,7 +4,6 @@ export const submitForm = (data) => async (dispatch) => {
     try {
         dispatch(sendRequest(true));
         const response = await htutwaiphyoe.post("/api/messages", data);
-        console.log(response.data);
         if (response.data.status === "success") {
             dispatch(showToast(true));
             setTimeout(() => {

@@ -2,7 +2,8 @@ import axios from "axios";
 
 const instance = axios.create({
     // baseURL: "https://portfolio-80db9.firebaseio.com",
-    baseURL: "http://localhost:9000",
+    // baseURL: "http://localhost:9000",
+    baseURL: "https://htutwaiphyoe.herokuapp.com",
     headers: {
         Authorization: `Bearer ${process.env.REACT_APP_API_KEY}`,
     },
