@@ -42,13 +42,13 @@
     padding: 1rem 3rem;
     text-align: left;
 }
-.SkillsSetBar h2 {
+.SkillsSetBar label {
     font-size: 2rem;
     margin-bottom: 0.3rem;
 }
 .OutterBar {
     width: 42rem;
-    height: 1.5rem;
+    height: 1.1rem;
     border-radius: 10rem;
     background-color: #fff;
     position: relative;

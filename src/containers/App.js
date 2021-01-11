@@ -4,42 +4,13 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Layout from "./Layout/Layout";
 import "./App.css";
 
-const Home = React.lazy(() => {
-    return new Promise((resolve) => {
-        setTimeout(() => resolve(import("./Home/Home")), 0);
-    });
-});
-const Blog = React.lazy(() => {
-    return new Promise((resolve) => {
-        setTimeout(() => resolve(import("./Blog/Blog")), 0);
-    });
-});
-const FullBlog = React.lazy(() => {
-    return new Promise((resolve) => {
-        setTimeout(() => resolve(import("./FullBlog/FullBlog")), 0);
-    });
-});
-const Contact = React.lazy(() => {
-    return new Promise((resolve) => {
-        setTimeout(() => resolve(import("./Contact/Contact")), 0);
-    });
-});
-const About = React.lazy(() => {
-    return new Promise((resolve) => {
-        setTimeout(() => resolve(import("./About/About")), 0);
-    });
-});
-const Portfolio = React.lazy(() => {
-    return new Promise((resolve) => {
-        setTimeout(() => resolve(import("./Portfolio/Portfolio")), 0);
-    });
-});
-
-const MessageBox = React.lazy(() => {
-    return new Promise((resolve) => {
-        setTimeout(() => resolve(import("../components/UI/MessageBox/MessageBox")), 0);
-    });
-});
+const Home = React.lazy(() => import("./Home/Home"));
+const Blog = React.lazy(() => import("./Blog/Blog"));
+const FullBlog = React.lazy(() => import("./FullBlog/FullBlog"));
+const Contact = React.lazy(() => import("./Contact/Contact"));
+const About = React.lazy(() => import("./About/About"));
+const Portfolio = React.lazy(() => import("./Portfolio/Portfolio"));
+const MessageBox = React.lazy(() => import("../components/UI/MessageBox/MessageBox"));
 
 const App = (props) => {
     return (

@@ -1,5 +1,4 @@
 import React from "react";
-// import NavigationList from "../../components/NavigationList/NavigationList";
 
 const Layout = (props) => {
     return (

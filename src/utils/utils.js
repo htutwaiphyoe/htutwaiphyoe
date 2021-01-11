@@ -1,3 +1,5 @@
+import React from "react";
+
 export const updateObject = (oldObj, newObj) => {
     return {
         ...oldObj,
@@ -35,4 +37,11 @@ export const beautifyDate = (date) =>
         day: "numeric",
         month: "long",
         year: "numeric",
+    });
+
+export const loadPage = (path) =>
+    React.lazy(() => {
+        return new Promise((resolve) => {
+            setTimeout(() => resolve(import(path)), 0);
+        });
     });

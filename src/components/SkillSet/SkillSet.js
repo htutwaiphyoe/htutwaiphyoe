@@ -2,14 +2,14 @@ import React, { useState, useEffect } from "react";
 import classes from "./SkillSet.module.css";
 
 const skillsSet = {
-    db: 63,
-    ds: 55,
-    dp: 50,
+    db: 55,
+    ds: 40,
+    dp: 40,
     git: 65,
     design: 78,
-    js: 74,
+    js: 71,
     react: 65,
-    node: 50,
+    node: 63,
 };
 
 const SkillSet = (props) => {
@@ -28,7 +28,7 @@ const SkillSet = (props) => {
     if (props.bar) {
         return (
             <div className={classes.SkillsSetBar}>
-                <h2>{props.content}</h2>
+                <label>{props.content}</label>
                 <div className={classes.OutterBar}>
                     <div className={classes.InnerBar} style={{ width: `${percentage}%` }}></div>
                 </div>
