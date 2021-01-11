@@ -7,6 +7,7 @@ import FormElement from "../../components/UI/FormElement/FormElement";
 import * as actionCreators from "../../store/actions";
 import { checkValidations } from "../../utils/utils";
 import MessageBox from "../../components/UI/MessageBox/MessageBox";
+import Toast from "../../components/UI/Toast/Toast";
 import classes from "./Contact.module.css";
 const contactData = {
     info: [
@@ -101,6 +102,7 @@ const Contact = (props) => {
         },
     });
     const error = useSelector((state) => state.ui.error);
+    const toast = useSelector((state) => state.ui.toast);
     const [contactFormValid, setContactFormValid] = useState(false);
     const dispatch = useDispatch();
     const loading = useSelector((state) => state.ui.loading);
@@ -184,6 +186,7 @@ const Contact = (props) => {
     }
     return (
         <React.Fragment>
+            <Toast message={"Message was sent."} toast={toast} />
             <NavigationList />
             <section className={classes.Contact}>
                 <div className={classes.Info}>

@@ -32,3 +32,10 @@ export const disableRequest = (payload) => {
         payload,
     };
 };
+
+export const showToast = (payload) => {
+    return {
+        type: actionTypes.SHOW_TOAST,
+        payload,
+    };
+};

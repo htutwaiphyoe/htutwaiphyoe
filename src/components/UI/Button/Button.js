@@ -8,7 +8,11 @@ const Button = (props) => {
         cssClasses.push(classes.disabled);
     }
     return (
-        <button className={cssClasses.join(" ")} onClick={props.onClickHandler}>
+        <button
+            className={cssClasses.join(" ")}
+            onClick={props.onClickHandler}
+            disabled={props.disabled}
+        >
             {props.children}
         </button>
     );

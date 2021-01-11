@@ -5,6 +5,7 @@ const initialState = {
     error: null,
     page: 1,
     requestable: true,
+    toast: false,
 };
 
 const reducer = (state = initialState, action) => {
@@ -19,6 +20,8 @@ const reducer = (state = initialState, action) => {
             return updateObject(state, { page: state.page + 1 });
         case actionTypes.DISABLE_REQUEST:
             return updateObject(state, { requestable: action.payload });
+        case actionTypes.SHOW_TOAST:
+            return updateObject(state, { toast: action.payload });
         default:
             return state;
     }
