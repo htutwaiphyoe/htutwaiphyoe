@@ -16,6 +16,8 @@ import covid from "../../assets/imgs/covid.png";
 import burger from "../../assets/imgs/burger.png";
 import photify from "../../assets/imgs/photify.png";
 import hwp from "../../assets/imgs/hwp.png";
+import financy from "../../assets/imgs/financy.png";
+import oldportfolio from "../../assets/imgs/oldportfolio.png";
 
 const statistics = [
     { icon: "medal-sharp", amount: "17", text: "projects done" },
@@ -76,6 +78,12 @@ const Portfolio = (props) => {
                 <div className={classes.Projects}>
                     <h1>Projects</h1>
                     <div className={classes.ProjectsBox}>
+                        <ProjectSet
+                            image={oldportfolio}
+                            tag={"webdesign"}
+                            content={"Web Design Training Project"}
+                            link={"https://hwpportfolio.netlify.app"}
+                        />
                         <ProjectSet
                             image={omnifood}
                             tag={"webdesign"}
@@ -143,10 +151,16 @@ const Portfolio = (props) => {
                             link={"https://photify.web.app"}
                         />
                         <ProjectSet
-                            image={hwp}
+                            image={financy}
                             tag={"react"}
+                            content={"Financy - Budget Tracker"}
+                            link={"https://financy.netlify.app"}
+                        />
+                        <ProjectSet
+                            image={hwp}
+                            tag={"MERNStack"}
                             content={"Htut Wai Phyoe - Portfolio"}
-                            link={"https://htutwaiphyoe.netlify.app/"}
+                            link={"https://htutwaiphyoe.netlify.app"}
                         />
                     </div>
                 </div>
