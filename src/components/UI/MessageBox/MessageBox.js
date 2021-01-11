@@ -3,7 +3,6 @@ import React from "react";
 import NavigationList from "../../NavigationList/NavigationList";
 import classes from "./MessageBox.module.css";
 const MessageBox = (props) => {
-    console.log(props);
     let components = null;
     if (props.message) {
         components = (

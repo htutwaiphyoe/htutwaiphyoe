@@ -25,75 +25,29 @@ const Blog = (props) => {
 
     useEffect(() => {
         if (blogs.length === 0) {
-            console.log("runs");
             dispatch(actionCreators.fetchBlogs());
         }
     }, [blogs.length, dispatch]);
     const scrollHandler = useCallback(() => {
-        if (blogRef) {
-            if (window.scrollY + window.innerHeight > (blogRef.current.clientHeight * 4) / 5) {
+        if (blogRef && blogs.length > 0) {
+            if (
+                blogRef?.current &&
+                window.scrollY + window.innerHeight > (blogRef.current.clientHeight * 4) / 5
+            ) {
                 if (!loading && requestable) {
                     dispatch(actionCreators.incrementPage());
                     dispatch(actionCreators.fetchBlogs(page + 1));
                 }
             }
         }
-    }, [dispatch, page, loading, requestable]);
+    }, [dispatch, page, loading, requestable, blogs.length]);
     useEffect(() => {
         window.addEventListener("scroll", scrollHandler);
         return () => {
             window.removeEventListener("scroll", scrollHandler);
         };
     }, [scrollHandler]);
-    let components = [
-        { id: 1 },
-        { id: 2 },
-        { id: 3 },
-        { id: 4 },
-        { id: 5 },
-        { id: 6 },
-        { id: 7 },
-        { id: 8 },
-        { id: 9 },
-    ].map((blog) => (
-        <div className={classes.BlogItem} key={blog.id}>
-            <div className={classes.ItemImage}>
-                <Skeleton
-                    variant="rect"
-                    width="100%"
-                    height={200}
-                    animation="wave"
-                    style={{ backgroundColor: "#2C2E2F" }}
-                />
-            </div>
-
-            <div className={classes.ItemText}>
-                <Skeleton
-                    variant="text"
-                    width="30%"
-                    animation="wave"
-                    style={{ backgroundColor: "#2C2E2F" }}
-                />
-
-                <div className={classes.time}>
-                    <Skeleton
-                        variant="text"
-                        width="20%"
-                        animation="wave"
-                        style={{ backgroundColor: "#2C2E2F" }}
-                    />
-                    <Skeleton
-                        variant="text"
-                        width="20%"
-                        animation="wave"
-                        style={{ backgroundColor: "#2C2E2F" }}
-                    />
-                </div>
-                <Skeleton variant="text" animation="wave" style={{ backgroundColor: "#2C2E2F" }} />
-                <Skeleton variant="text" animation="wave" style={{ backgroundColor: "#2C2E2F" }} />
-            </div>
-        </div>
-    ));
+    let components = null;
 
     if (error) {
         return <MessageBox message={error.message} />;

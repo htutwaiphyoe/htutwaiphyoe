@@ -21,7 +21,7 @@ export const clearFullBlog = () => {
         type: actionTypes.CLEAR_FULLBLOG,
     };
 };
-export const fetchBlogs = (page = 1, limit = 9) => async (dispatch) => {
+export const fetchBlogs = (page = 1, limit = 6) => async (dispatch) => {
     try {
         dispatch(sendRequest(true));
         dispatch(disableRequest(true));

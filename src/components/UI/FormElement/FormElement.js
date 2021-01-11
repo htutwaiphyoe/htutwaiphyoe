@@ -23,7 +23,7 @@ const FormElement = (props) => {
                     onChange={props.onChangeHandler}
                 >
                     {props.configs.options.map((option) => (
-                        <option option={option.value} key={option.value}>
+                        <option value={option.value} key={option.value}>
                             {option.displayValue}
                         </option>
                     ))}

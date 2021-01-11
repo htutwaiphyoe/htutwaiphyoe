@@ -44,9 +44,9 @@ const Contact = (props) => {
             },
             value: "",
             validations: {
-                minLength: 3,
+                minLength: 5,
                 required: true,
-                maxLength: 20,
+                maxLength: 10,
             },
             touch: false,
             valid: false,
@@ -135,7 +135,6 @@ const Contact = (props) => {
     const onChangeHandler = (e, type) => {
         const updatedContactForm = { ...contactForm };
         const updatedFormElement = { ...updatedContactForm[type] };
-
         updatedFormElement.value = e.target.value;
         updatedFormElement.touch = true;
         updatedFormElement.valid = checkValidations(
