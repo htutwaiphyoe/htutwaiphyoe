@@ -33,7 +33,11 @@ const FullBlog = (props) => {
             dispatch(actionCreators.clearFullBlog());
         };
     }, [props.match.params.slug, dispatch, blogs]);
-
+    useEffect(() => {
+        if (fullBlog) {
+            document.title = fullBlog.title + " | Htut Wai Phyoe";
+        }
+    }, [fullBlog]);
     let component = <FullBlogLoader />;
     if (error) {
         return <MessageBox message={error.message} />;

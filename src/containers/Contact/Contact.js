@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 
 import NavigationList from "../../components/NavigationList/NavigationList";
@@ -101,6 +101,10 @@ const Contact = (props) => {
             touch: false,
         },
     });
+
+    useEffect(() => {
+        document.title = "Contact | Htut Wai Phyoe";
+    }, []);
     const error = useSelector((state) => state.ui.error);
     const toast = useSelector((state) => state.ui.toast);
     const [contactFormValid, setContactFormValid] = useState(false);

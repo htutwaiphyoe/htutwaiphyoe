@@ -27,7 +27,9 @@ const statistics = [
 const Portfolio = (props) => {
     useEffect(() => {
         window.scrollTo({ top: 0 });
+        document.title = "Portfolio | Htut Wai Phyoe";
     }, []);
+
     return (
         <React.Fragment>
             <NavigationList transparent={false} />

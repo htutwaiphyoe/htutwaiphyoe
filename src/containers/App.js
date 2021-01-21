@@ -1,6 +1,7 @@
 import React, { Suspense } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
+
 import Layout from "./Layout/Layout";
 import "./App.css";
 
@@ -19,6 +20,7 @@ const App = (props) => {
                 <Suspense fallback={null}>
                     <Switch>
                         <Route path="/" exact component={Home} />
+
                         <Route path="/blogs" exact component={Blog} />
                         <Route path="/blogs/:slug" exact component={FullBlog} />
                         <Route path="/about" exact component={About} />

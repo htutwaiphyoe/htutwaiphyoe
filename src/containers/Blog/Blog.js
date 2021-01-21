@@ -22,7 +22,9 @@ const Blog = (props) => {
             dispatch(actionCreators.clearError());
         };
     }, [dispatch]);
-
+    useEffect(() => {
+        document.title = "Blogs | Htut Wai Phyoe";
+    }, []);
     useEffect(() => {
         if (blogs.length === 0) {
             dispatch(actionCreators.fetchBlogs());

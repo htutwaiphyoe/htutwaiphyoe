@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import img from "../../assets/imgs/about5.jpg";
 import NavigationList from "../../components/NavigationList/NavigationList";
 import classes from "./About.module.css";
 const About = (props) => {
+    useEffect(() => {
+        document.title = "About | Htut Wai Phyoe";
+    }, []);
     return (
         <React.Fragment>
             <NavigationList />

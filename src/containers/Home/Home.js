@@ -7,7 +7,9 @@ const Home = (props) => {
     let i = 0;
     let txt = "NOT AN OPTION"; /* The text */
     let speed = 500; /* The speed/duration of the effect in milliseconds */
-
+    useEffect(() => {
+        document.title = "Htut Wai Phyoe | Web Developer";
+    }, []);
     useEffect(() => {
         const typeWriter = () => {
             if (heading.current) {
