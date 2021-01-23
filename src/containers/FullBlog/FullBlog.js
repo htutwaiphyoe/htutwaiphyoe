@@ -6,6 +6,7 @@ import * as actionCreators from "../../store/actions";
 import MessageBox from "../../components/UI/MessageBox/MessageBox";
 import { beautifyDate } from "../../utils/utils";
 import FullBlogLoader from "./FullBlogLoader";
+import ScrollIndicator from "../../components/UI/ScrollIndicator/ScrollIndicator";
 import classes from "./FullBlog.module.css";
 const FullBlog = (props) => {
     const fullBlog = useSelector((state) => state.blogs.fullBlog);
@@ -108,6 +109,7 @@ const FullBlog = (props) => {
     }
     return (
         <React.Fragment>
+            <ScrollIndicator />
             <NavigationList />
             {component}
         </React.Fragment>
