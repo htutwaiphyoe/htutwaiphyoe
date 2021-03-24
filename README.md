@@ -1,24 +1,23 @@
 ### Hi, I'm HWP 🌻 ![](https://komarev.com/ghpvc/?username=htutwaiphyoe&color=5A43CB)
 
-A full stack developer who passionate about programming, software engineering and computer science and love to build full-fledged application. 
+A full stack developer who passionate about programming, software engineering and computer science and love to build full-fledged applications.
 
 ### How To Reach me
 
-- 💌 htutwaiphyoe@gmail.com
-- 🌏 https://www.htutwaiphyoe.me/
+-   💌 htutwaiphyoe@gmail.com
+-   🌏 https://www.htutwaiphyoe.me/
 
 ### What I do
 
 -   💼 Junior Front End Developer working at [Codigo.co](https://www.codigo.co/)
 -   👨‍💻 Full Stack Developer
--   👨‍🎓 CS Student at Mandalay Technological University  
+-   👨‍🎓 CS Student at Mandalay Technological University
 -   💡 Founder and Content Creator at MTU Code Lab.
 
 ### What I share
 
-- 📝 Quality blogs  https://www.htutwaiphyoe.me/blogs
-- 💬 Weekly Podcasts https://www.clubhouse.com/@htutwaiphyoe_
-
+-   📝 Quality blogs https://www.htutwaiphyoe.me/blogs
+-   💬 Weekly Podcasts https://www.clubhouse.com/@htutwaiphyoe_
 
 ### What I use
 
@@ -50,11 +49,10 @@ A full stack developer who passionate about programming, software engineering an
 [<img src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white" />]()
 [<img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />]()
 
-
 ### What I achieved
 
 [Certificate of Introduction to Computer Science - CS50 (Harvard Universtiy)](https://github.com/htutwaiphyoe/CS50)
 
 ![Here's my github stats](https://github-readme-stats.vercel.app/api?username=htutwaiphyoe)
 
-<!-- [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=htutwaiphyoe)](https://git.io/streak-stats) -->
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=htutwaiphyoe)](https://git.io/streak-stats)
