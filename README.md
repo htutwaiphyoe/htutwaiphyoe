@@ -28,5 +28,3 @@ I'm currently a 20 years old university student studying **Computer Engineering 
 
 ### My stats
 ![Here's my github stats](https://github-readme-stats.vercel.app/api?username=htutwaiphyoe)
-
-![](https://komarev.com/ghpvc/?username=htutwaiphyoe)
