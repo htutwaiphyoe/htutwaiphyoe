@@ -6,6 +6,15 @@ I'm currently a university student studying **Computer Engineering & Information
 -   🤝 I’m looking to collaborate on web projects.
 -   📝 I'm Producing quality sharing content about web development especially for JavaScrip and MERN stack.
 
+
+## Sharing contents
+
+Read my articles https://www.htutwaiphyoe.me/blogs
+
+Podcasts I have done:
+
+- Job Hunting as a developer
+
 ### Web Design
 
 [<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />]()
