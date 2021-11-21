@@ -2,17 +2,19 @@
 
 I'm currently a frontend developer working at Codigo.co.
 
--   🌱 I’m currently learning Full Stack Web Development.
+-   🌱 I’m currently learning Full Stack Development.
 -   🤝 I’m looking to collaborate on web projects.
--   📝 I'm producing quality sharing content about web development especially for JavaScrip and MERN stack.
+-   📝 I'm producing quality sharing content about web development.
 
 ## Sharing contents
 
 Read my articles https://www.htutwaiphyoe.me/blogs
 
-Podcasts I have done:
+Podcasts I have done at clubhouse:
 
-- Job Hunting as a developer
+-   Job Hunting as a developer
+
+Follow me for more [htutwaiphyoe](https://www.clubhouse.com/@htutwaiphyoe_)
 
 ### Web Design
 
@@ -34,4 +36,4 @@ Podcasts I have done:
 
 ![Here's my github stats](https://github-readme-stats.vercel.app/api?username=htutwaiphyoe)
 
-<!-- [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=htutwaiphyoe)](https://git.io/streak-stats) -->
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=htutwaiphyoe)](https://git.io/streak-stats)
