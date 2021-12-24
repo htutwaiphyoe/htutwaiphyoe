@@ -1,22 +1,21 @@
-# Hi, I'm HWP 🌻
+### Hi, I'm HWP 🌻
 
-I'm currently a frontend developer working at Codigo.co.
+### What I do
 
--   🌱 I’m currently learning Full Stack Development.
--   🤝 I’m looking to collaborate on web projects.
--   📝 I'm producing quality sharing content about web development.
+-   💼 Junior Front End Developer working at Codigo.co
+-   👨‍💻 Full Stack Developer
+-   👨‍🎓 CS Student at Mandalay Technological University  
+-   💡 Founter and Content Creator at MTU Code Lab.
 
-## Sharing contents
+### What I share
 
-Read my articles https://www.htutwaiphyoe.me/blogs
+- 📝 Quality blogs  https://www.htutwaiphyoe.me/blogs
+- 💬 Weekly Podcasts https://www.clubhouse.com/@htutwaiphyoe_
 
-Podcasts I have done at clubhouse:
 
--   Job Hunting as a developer
+### What I use
 
-Follow me for more [htutwaiphyoe](https://www.clubhouse.com/@htutwaiphyoe_)
-
-### Web Design
+#### Frontend Development
 
 [<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />]()
 [<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />]()
@@ -24,15 +23,30 @@ Follow me for more [htutwaiphyoe](https://www.clubhouse.com/@htutwaiphyoe_)
 [<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />]()
 [<img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />]()
 [<img src="https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=material-ui&logoColor=white" />]()
-
-### Web Development Stack
-
 [<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />]()
-[<img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" />]()
-[<img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" />]()
-[<img src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge" />]()
 [<img src="https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" />]()
+
+#### Backend Development
+
+[<img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" />]()
+[<img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" />]()
 [<img src="https://img.shields.io/badge/nestjs-%23E0234E.svg?style=for-the-badge&logo=nestjs&logoColor=white" />]()
+
+#### Database
+
+[<img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" />]()
+
+#### Tools
+
+[<img src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white" />]()
+[<img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=white" />]()
+[<img src="https://img.shields.io/badge/Visual_Studio-5C2D91?style=for-the-badge&logo=visual%20studio&logoColor=white" />]()
+[<img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />]()
+
+
+### What I achieved
+
+[Certificate of Introduction to Computer Science - CS50 (Harvard Universtiy)](https://github.com/htutwaiphyoe/CS50)
 
 ![Here's my github stats](https://github-readme-stats.vercel.app/api?username=htutwaiphyoe)
 
