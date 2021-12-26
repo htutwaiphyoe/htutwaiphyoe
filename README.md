@@ -1,11 +1,17 @@
 ### Hi, I'm HWP 🌻
 
+A full stack developer who passionate about programming, software engineering and computer science and love to build full-fledged application. 
+
+### How To Reach me
+
+- 💌 htutwaiphyoe@gmail.com
+
 ### What I do
 
--   💼 Junior Front End Developer working at Codigo.co
+-   💼 Junior Front End Developer working at [Codigo.co](https://www.codigo.co/)
 -   👨‍💻 Full Stack Developer
 -   👨‍🎓 CS Student at Mandalay Technological University  
--   💡 Founter and Content Creator at MTU Code Lab.
+-   💡 Founder and Content Creator at MTU Code Lab.
 
 ### What I share
 
@@ -50,4 +56,4 @@
 
 ![Here's my github stats](https://github-readme-stats.vercel.app/api?username=htutwaiphyoe)
 
-<!-- [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=htutwaiphyoe)](https://git.io/streak-stats) -->
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=htutwaiphyoe)](https://git.io/streak-stats)
