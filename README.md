@@ -9,9 +9,9 @@ A full stack developer who passionate about programming, software engineering an
 
 ### What I do
 
--   💼 Junior Front End Developer working at [Codigo.co](https://www.codigo.co/)
+-   💼 Front End Developer working at [Codigo.co](https://www.codigo.co/)
 -   👨‍💻 Full Stack Developer
--   👨‍🎓 CS Student at Mandalay Technological University
+-   👨‍🎓 Computer Science Student at Mandalay Technological University
 -   💡 Founder and Content Creator at MTU Code Lab.
 
 ### What I share
