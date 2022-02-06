@@ -1,6 +1,6 @@
 ### Hi, I'm HWP 🌻 ![](https://komarev.com/ghpvc/?username=htutwaiphyoe&color=5A43CB)
 
-A full stack developer who passionate about programming, software engineering and computer science and love to build full-fledged applications.
+Currently working remotely as a Frontend Developer at Singapore company specializing ReactJS and NextJS development. As a IT student, strongly interested in Computer Science, Software Engineering and Programming. Eager to learn and growth with positive mental attitude. Excited to build applications with fullstack development using modern technologies. Also willing to share knowledge and experience in my career to juniors and others.
 
 ### How To Reach me
 
