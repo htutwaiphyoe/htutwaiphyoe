@@ -1,23 +1,23 @@
 ### Hi, I'm HWP 🌻 ![](https://komarev.com/ghpvc/?username=htutwaiphyoe&color=5A43CB)
 
-Currently working remotely as a Frontend Developer at Singapore company specializing ReactJS and NextJS development. As a IT student, strongly interested in Computer Science, Software Engineering and Programming. Eager to learn and growth with positive mental attitude. Excited to build applications with fullstack development using modern technologies. Also willing to share knowledge and experience in my career to juniors and others.
+Currently working remotely as a Frontend Developer at Codigo.co which is a Singapore company specializing ReactJS and NextJS development. As a IT student, strongly interested in Computer Science, Software Engineering and Programming. Eager to learn and growth with positive mental attitude. Excited to build applications with fullstack development using modern technologies. Also willing to share knowledge and experience in my career to juniors and others.
 
 ### How To Reach me
 
--   💌 htutwaiphyoe@gmail.com
--   🌏 https://www.htutwaiphyoe.me/
+- 💌 htutwaiphyoe@gmail.com
+- 🌏 https://www.htutwaiphyoe.me/
 
 ### What I do
 
--   💼 Front End Developer working at [Codigo.co](https://www.codigo.co/)
--   👨‍💻 Full Stack Developer
--   👨‍🎓 Computer Science Student at Mandalay Technological University
--   💡 Founder and Content Creator at MTU Code Lab.
+- 💼 Frontend Developer working at [Codigo.co](https://www.codigo.co/)
+- 👨‍💻 Fullstack Developer
+- 👨‍🎓 Computer Science Student at Mandalay Technological University
+- 💡 Founder and Content Creator at MTU Code Lab.
 
 ### What I share
 
--   📝 Quality blogs https://www.htutwaiphyoe.me/blogs
--   💬 Weekly Podcasts https://www.clubhouse.com/@htutwaiphyoe_
+- 📝 Quality blogs https://www.htutwaiphyoe.me/blogs
+- 💬 Weekly Podcasts https://www.clubhouse.com/@htutwaiphyoe_
 
 ### What I use
 
@@ -29,7 +29,9 @@ Currently working remotely as a Frontend Developer at Singapore company speciali
 [<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />]()
 [<img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />]()
 [<img src="https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=material-ui&logoColor=white" />]()
+[<img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />]()
 [<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />]()
+[<img src="https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white" />]()
 [<img src="https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" />]()
 
 #### Backend Development
@@ -45,9 +47,11 @@ Currently working remotely as a Frontend Developer at Singapore company speciali
 #### Tools
 
 [<img src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white" />]()
+[<img src="https://img.shields.io/badge/Yarn-2C8EBB?style=for-the-badge&logo=yarn&logoColor=white" />]()
 [<img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=white" />]()
 [<img src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white" />]()
 [<img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />]()
+[<img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" />]()
 
 ### What I achieved
 
