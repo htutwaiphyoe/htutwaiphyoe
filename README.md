@@ -56,3 +56,5 @@ Currently working remotely as a Frontend Developer at Singapore company speciali
 ![Here's my github stats](https://github-readme-stats.vercel.app/api?username=htutwaiphyoe)
 
 [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=htutwaiphyoe)](https://git.io/streak-stats)
+
+[![HtutWaiPhyoe github activity graph](https://activity-graph.herokuapp.com/graph?username=htutwaiphyoe&bg_color=f8f8f8&color=010101&line=8a2be2&point=24292e&area=false&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
