@@ -10,7 +10,7 @@ Currently working remotely as a Frontend Developer at Codigo.co which is a Singa
 ### What I do
 
 - 💼 Frontend Developer working at [Codigo.co](https://www.codigo.co/)
-- 👨‍💻 Fullstack Developer
+- 👨‍💻 Grinding to be a Professional Developer Career
 - 👨‍🎓 Computer Science Student at Mandalay Technological University
 - 💡 Founder and Content Creator at MTU Code Lab.
 
