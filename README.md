@@ -16,7 +16,7 @@ Currently working remotely as a Frontend Developer at Codigo.co which is a Singa
 
 ### What I share
 
-- 📝 Quality blogs https://www.htutwaiphyoe.me/blogs
+- 📝 Quality blogs [https://www.htutwaiphyoe.me/blogs](https://www.htutwaiphyoe.dev/blogs)
 - 💬 Weekly Podcasts https://www.clubhouse.com/@htutwaiphyoe_
 
 ### What I use
