@@ -10,7 +10,7 @@ A passionate software developer with 1 year of working experience. Interested in
 
 ### What I do
 
-- 💼 Frontend Developer working at [Codigo.co](https://www.codigo.co/)
+- 💼 Remote Frontend Developer working at [Codigo.co](https://www.codigo.co/)
 - 👨‍💻 Grinding to be a Professional Developer Career
 - 👨‍🎓 Computer Science Student at Mandalay Technological University
 - 💡 Founder and Content Creator at MTU Code Lab.
