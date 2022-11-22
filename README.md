@@ -1,11 +1,12 @@
-### Hi, I'm HWP 🌻 ![](https://komarev.com/ghpvc/?username=htutwaiphyoe&color=5A43CB)
+## Hi, I'm Htut Wai Phyoe 
+<!-- ![](https://komarev.com/ghpvc/?username=htutwaiphyoe&color=5A43CB) -->
 
-Currently working remotely as a Frontend Developer at Codigo.co which is a Singapore company specializing ReactJS and NextJS development. As a IT student, strongly interested in Computer Science, Software Engineering and Programming. Eager to learn and growth with positive mental attitude. Excited to build applications with fullstack development using modern technologies. Also willing to share knowledge and experience in my career to juniors and others.
+A passionate software developer with 1 year of working experience. Interested in Computer Science, Software Engineering and Programming. Eager to learn and grow with positive mental attitude. Excited to build fully-fledged web based applications using modern technologies. Willing to share knowledge and experience in my career to juniors and others.
 
 ### How To Reach me
 
-- 💌 htutwaiphyoe@gmail.com
 - 🌏 https://www.htutwaiphyoe.dev/
+- 💌 htutwaiphyoe@gmail.com
 
 ### What I do
 
@@ -38,7 +39,7 @@ Currently working remotely as a Frontend Developer at Codigo.co which is a Singa
 
 [<img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" />]()
 [<img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" />]()
-[<img src="https://img.shields.io/badge/nestjs-%23E0234E.svg?style=for-the-badge&logo=nestjs&logoColor=white" />]()
+<!-- [<img src="https://img.shields.io/badge/nestjs-%23E0234E.svg?style=for-the-badge&logo=nestjs&logoColor=white" />]() -->
 
 #### Database
 
