@@ -1,7 +1,10 @@
 ## Hi, I'm Htut Wai Phyoe 
-<!-- ![](https://komarev.com/ghpvc/?username=htutwaiphyoe&color=5A43CB) -->
 
-A passionate software developer with 1 year of working experience. Interested in Computer Science, Software Engineering and Programming. Eager to learn and grow with positive mental attitude. Excited to build fully-fledged web based applications using modern technologies. Willing to share knowledge and experience in my career to juniors and others.
+![Profile View](https://komarev.com/ghpvc/?username=htutwaiphyoe&color=5A43CB)
+
+[![Wakatime](https://wakatime.com/badge/user/89cef132-7873-4db7-8f6d-0d48412d0c33.svg)](https://wakatime.com/@89cef132-7873-4db7-8f6d-0d48412d0c33)
+
+A passionate software engineer with over 1 year of work experience in web development specializing frontend with ReactJS & NextJS. Interested in Computer Science, Software Engineering and Programming. Eager to learn and grow with positive mental attitude. Excited to build fully-fledged web based applications using modern technologies. Willing to share knowledge and experience in my career to others.
 
 ### How To Reach me
 
@@ -10,49 +13,30 @@ A passionate software developer with 1 year of working experience. Interested in
 
 ### What I do
 
-- 💼 Remote Frontend Developer working at [Codigo.co](https://www.codigo.co/)
-- 👨‍💻 Grinding to be a Professional Developer Career
+- 💼 Frontend Developer working at [Codigo](https://www.codigo.co/) & [Rezeve](https://www.rezeve.com/)
+- 👨‍💻 Learning Frontend technologies
 - 👨‍🎓 Computer Science Student at Mandalay Technological University
-- 💡 Founder and Content Creator at MTU Code Lab.
+- 💡 Content Creator
 
 ### What I share
 
 - 📝 Quality blogs https://www.htutwaiphyoe.dev/blogs
-- 💬 Weekly Podcasts https://www.clubhouse.com/@htutwaiphyoe_
+- 💬 Sharing Podcasts https://www.clubhouse.com/@htutwaiphyoe_
 
 ### What I use
 
 #### Frontend Development
 
-[<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />]()
-[<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />]()
-[<img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white" />]()
-[<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />]()
-[<img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />]()
-[<img src="https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=material-ui&logoColor=white" />]()
-[<img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />]()
-[<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />]()
-[<img src="https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white" />]()
-[<img src="https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" />]()
+[![My Skills](https://skillicons.dev/icons?i=html,css,sass,js,ts,tailwind,materialui,react,nextjs,redux)](https://skillicons.dev)
 
 #### Backend Development
 
-[<img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" />]()
-[<img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" />]()
-<!-- [<img src="https://img.shields.io/badge/nestjs-%23E0234E.svg?style=for-the-badge&logo=nestjs&logoColor=white" />]() -->
-
-#### Database
-
-[<img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" />]()
+[![My Skills](https://skillicons.dev/icons?i=nodejs,express,nestjs,mongodb,mysql)](https://skillicons.dev)
 
 #### Tools
 
-[<img src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white" />]()
-[<img src="https://img.shields.io/badge/Yarn-2C8EBB?style=for-the-badge&logo=yarn&logoColor=white" />]()
-[<img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=white" />]()
-[<img src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white" />]()
-[<img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />]()
-[<img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" />]()
+[![My Skills](https://skillicons.dev/icons?i=netlify,vercel,firebase,aws,postman,vscode,vite,md,git,github,figma)](https://skillicons.dev)
+
 
 ### What I achieved
 
@@ -61,5 +45,3 @@ A passionate software developer with 1 year of working experience. Interested in
 ![Here's my github stats](https://github-readme-stats.vercel.app/api?username=htutwaiphyoe)
 
 [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=htutwaiphyoe)](https://git.io/streak-stats)
-
-[![HtutWaiPhyoe github activity graph](https://activity-graph.herokuapp.com/graph?username=htutwaiphyoe&bg_color=f8f8f8&color=010101&line=8a2be2&point=24292e&area=false&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
