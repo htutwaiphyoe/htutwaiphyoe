@@ -4,7 +4,7 @@
 
 [![Wakatime](https://wakatime.com/badge/user/89cef132-7873-4db7-8f6d-0d48412d0c33.svg)](https://wakatime.com/@89cef132-7873-4db7-8f6d-0d48412d0c33)
 
-A passionate software engineer with over 1 year of work experience in web development specializing frontend with ReactJS & NextJS. Interested in Computer Science, Software Engineering and Programming. Eager to learn and grow with positive mental attitude. Excited to build fully-fledged web based applications using modern technologies. Willing to share knowledge and experience in my career to others.
+A young, energetic and passionate software engineer with over 1 year of professional work experience in web development specializing frontend technologies. Interested in Computer Science, Software Engineering and Programming. Eager to learn and grow with positive mental attitude. Excited to build fully-fledged web based softwares using modern technologies. Willing to share knowledge and experience in my career to others.
 
 ### How To Reach me
 
