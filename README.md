@@ -14,7 +14,7 @@ A young, energetic and passionate software engineer with over 1 year of professi
 ### What I do
 
 - 💼 Frontend Developer working at [Codigo](https://www.codigo.co/) & [Rezeve](https://www.rezeve.com/)
-- 👨‍💻 Learning Frontend technologies
+- 👨‍💻 Pursuing the happiness
 - 👨‍🎓 Computer Science Student at Mandalay Technological University
 - 💡 Content Creator
 
