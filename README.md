@@ -16,7 +16,7 @@ An ambitious, energetic and passionate software engineer with over one and half 
 - 💼 Frontend Developer working at [Codigo](https://www.codigo.co/) & [Rezeve](https://www.rezeve.com/)
 - 👨‍💻 Pursuing the happiness and learning new technologies
 - 👨‍🎓 Computer Science Student at Mandalay Technological University
-- 💡 Content Creator and Blogger
+- 💡 Content Creator
 
 ### What I share
 
@@ -27,20 +27,16 @@ An ambitious, energetic and passionate software engineer with over one and half 
 
 #### Frontend Development
 
-[![Frontend](https://skillicons.dev/icons?i=html,css,sass,js,ts,tailwind,materialui,react,nextjs,redux)](https://skillicons.dev)
+[![Frontend](https://skillicons.dev/icons?i=html,css,sass,js,ts,tailwind,materialui,react,nextjs,redux&perline=5)](https://skillicons.dev)
 
 #### Backend Development
 
-[![Backend](https://skillicons.dev/icons?i=nodejs,express,mongodb,mysql)](https://skillicons.dev)
+[![Backend](https://skillicons.dev/icons?i=nodejs,express,mongodb,mysql&perline=5)](https://skillicons.dev)
 
 #### Tools
 
-[![Tools](https://skillicons.dev/icons?i=firebase,aws,postman,vscode,vite,md,git,github,figma)](https://skillicons.dev)
-
-### What I achieved
-
-[Certificate of Introduction to Computer Science - CS50 (Harvard Universtiy)](https://certificates.cs50.io/8b947c82-1a7b-4c9c-9b17-7d399b726cda.pdf?size=letter)
+[![Tools](https://skillicons.dev/icons?i=firebase,aws,postman,vscode,vite,md,git,github,figma&perline=5)](https://skillicons.dev)
 
 ![Here's my github stats](https://github-readme-stats.vercel.app/api?username=htutwaiphyoe)
 
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=htutwaiphyoe)](https://git.io/streak-stats)
+<!-- [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=htutwaiphyoe)](https://git.io/streak-stats) -->
