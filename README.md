@@ -4,9 +4,10 @@
 
 A skilled frontend developer with over 3 years of professional experience in designing, developing, and maintaining SaaS web applications. Possesses a proven track record in software engineering using cutting-edge technologies and frameworks, consistently delivering high-quality solutions with the considerations of User Experience, Performance, and Clean Code. Expertise in working closely with stakeholders, UI/UX designers and backend teams to develop business features and ensure the timely delivery of project milestones.
 
-📧 htutwaiphyoe@gmail.com
-✍️ https://htutwaiphyoe.medium.com/
-🎙️ https://www.clubhouse.com/@htutwaiphyoe_
+📧 [htutwaiphyoe@gmail.com](htutwaiphyoe@gmail.com)
+✍️ [https://htutwaiphyoe.medium.com/](https://htutwaiphyoe.medium.com/)
+🎙️ [https://www.clubhouse.com/@htutwaiphyoe_](https://www.clubhouse.com/@htutwaiphyoe_)
+
 
 ### Projects
 
@@ -14,7 +15,7 @@ A skilled frontend developer with over 3 years of professional experience in des
 
 ### Technologies
 
-[![Technologies](https://skillicons.dev/icons?i=html,css,sass,js,ts,tailwind,materialui,react,nextjs,redux,nodejs,express,mongodb,mysql,firebase,aws,figma&perline=6)](https://skillicons.dev)
+[![Technologies](https://skillicons.dev/icons?i=html,css,sass,js,ts,tailwind,materialui,react,nextjs,redux,cypress,nodejs,express,mongodb,mysql,firebase,aws,figma&perline=6)](https://skillicons.dev)
 
 ### Status
 
