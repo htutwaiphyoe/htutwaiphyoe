@@ -1,42 +1,23 @@
-## Hi, I'm Htut Wai Phyoe 
+### About
 
-![Profile View](https://komarev.com/ghpvc/?username=htutwaiphyoe&color=5A43CB)
+![Profile View](https://komarev.com/ghpvc/?username=htutwaiphyoe&color=5A43CB) [![Wakatime](https://wakatime.com/badge/user/89cef132-7873-4db7-8f6d-0d48412d0c33.svg)](https://wakatime.com/@89cef132-7873-4db7-8f6d-0d48412d0c33)
 
-[![Wakatime](https://wakatime.com/badge/user/89cef132-7873-4db7-8f6d-0d48412d0c33.svg)](https://wakatime.com/@89cef132-7873-4db7-8f6d-0d48412d0c33)
+A skilled frontend developer with over 3 years of professional experience in designing, developing, and maintaining SaaS web applications. Possesses a proven track record in software engineering using cutting-edge technologies and frameworks, consistently delivering high-quality solutions with the considerations of User Experience, Performance, and Clean Code. Expertise in working closely with stakeholders, UI/UX designers and backend teams to develop business features and ensure the timely delivery of project milestones.
 
-An ambitious, energetic and passionate software engineer with over one and half years of proven professional work experience in web industry specializing frontend development. Interested in Computer Science, Software Engineering and Programming. Eager to learn and grow with positive mental attitude. Excited to build fully-fledged web based softwares using modern technologies. Willing to share knowledge and experience in my career to others.
+📧 htutwaiphyoe@gmail.com
+✍️ https://htutwaiphyoe.medium.com/
+🎙️ https://www.clubhouse.com/@htutwaiphyoe_
 
-### How To Reach me
+### Projects
 
-- 🌏 https://www.htutwaiphyoe.dev/
-- 💌 htutwaiphyoe@gmail.com
+[<img src="https://rezeve.zendesk.com/embeddable/avatars/17312822610713" alt="Flying Saucer" width="58" height="58" style="border-radius: 12px" />](https://rezeve.com/)
 
-### What I do
+### Technologies
 
-- 💼 Frontend Developer working at [Codigo](https://www.codigo.co/) & [Rezeve](https://www.rezeve.com/)
-- 👨‍💻 Pursuing the happiness and learning new technologies
-- 👨‍🎓 Computer Science Student at Mandalay Technological University
-- 💡 Content Creator
+[![Technologies](https://skillicons.dev/icons?i=html,css,sass,js,ts,tailwind,materialui,react,nextjs,redux,nodejs,express,mongodb,mysql,firebase,aws,figma&perline=6)](https://skillicons.dev)
 
-### What I share
+### Status
 
-- 📝 Quality blogs https://www.htutwaiphyoe.dev/blogs
-- 💬 Sharing Podcasts https://www.clubhouse.com/@htutwaiphyoe_
-
-### What I use
-
-#### Frontend Development
-
-[![Frontend](https://skillicons.dev/icons?i=html,css,sass,js,ts,tailwind,materialui,react,nextjs,redux&perline=5)](https://skillicons.dev)
-
-#### Backend Development
-
-[![Backend](https://skillicons.dev/icons?i=nodejs,express,mongodb,mysql&perline=5)](https://skillicons.dev)
-
-#### Tools
-
-[![Tools](https://skillicons.dev/icons?i=firebase,aws,postman,vscode,vite,md,git,github,figma&perline=5)](https://skillicons.dev)
-
-![Here's my github stats](https://github-readme-stats.vercel.app/api?username=htutwaiphyoe)
+![Github Stats](https://github-readme-stats.vercel.app/api?username=htutwaiphyoe)
 
 [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=htutwaiphyoe)](https://git.io/streak-stats)
