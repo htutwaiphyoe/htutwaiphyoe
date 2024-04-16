@@ -11,7 +11,7 @@ A skilled frontend developer with over 3 years of professional experience in des
 
 ### Projects
 
-[<img src="https://rezeve.zendesk.com/embeddable/avatars/17312822610713" alt="Flying Saucer" width="58" height="58" style="border-radius: 12px" />](https://rezeve.com/)
+[<img src="https://play-lh.googleusercontent.com/wcWlM7_mZGnBf18G1JPJp9SUzyYmx4z7_0fbMiK8McP-qHppMxAFHcS9VdWKt5Wa3taG" alt="Flying Saucer" width="60" height="60" style="border-radius: 12px" />](https://www.rezerv.co/)
 
 ### Technologies
 
