@@ -5,13 +5,15 @@
 A skilled frontend developer with over 3 years of professional experience in designing, developing, and maintaining SaaS web applications. Possesses a proven track record in software engineering using cutting-edge technologies and frameworks, consistently delivering high-quality solutions with the considerations of User Experience, Performance, and Clean Code. Expertise in working closely with stakeholders, UI/UX designers and backend teams to develop business features and ensure the timely delivery of project milestones.
 
 📧 htutwaiphyoe@gmail.com \
-✍️ https://htutwaiphyoe.medium.com \
-🎙️ https://www.clubhouse.com/@htutwaiphyoe_
+✍️ https://htutwaiphyo.medium.com \
+🎙️ https://www.clubhouse.com/@htutwaiphyo_
 
 
 ### Projects
 
 [<img src="https://play-lh.googleusercontent.com/wcWlM7_mZGnBf18G1JPJp9SUzyYmx4z7_0fbMiK8McP-qHppMxAFHcS9VdWKt5Wa3taG" alt="Flying Saucer" width="60" height="60" style="border-radius: 12px" />](https://www.rezerv.co/)
+
+[<img src="https://www.htutwaiphyo.pro/_next/image?url=%2Fimages%2Fqr-x.png&w=256&q=75" alt="Flying Saucer" width="60" height="60" style="border-radius: 12px" />](https://qr-x.devtrice.dev/)
 
 ### Technologies
 
