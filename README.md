@@ -32,4 +32,4 @@ A skilled web engineer with over 3 years of professional working experience in d
 
 ![Github Stats](https://github-readme-stats.vercel.app/api?username=htutwaiphyoe)
 
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=htutwaiphyoe)](https://git.io/streak-stats)
+[![GitHub Streak](https://streak-stats.demolab.com?user=htutwaiphyoe)](https://git.io/streak-stats)
